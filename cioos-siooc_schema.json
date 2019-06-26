@@ -41,6 +41,132 @@
       "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
     },
     {
+     "iso_path": ["MD_Metadata","MD_Identifier","CI_Citation","CI_Responsibility"],
+     "field_name": "MD_Scope",
+     "label": "Scope",
+     "preset": "composite",
+     "subfields":[
+    {
+      "iso_path":["MD_Metadatascope","resourceScope","MD_ScopeCode"],
+      "field_name": "scope_code",
+      "label": "Code",
+      "preset": "select",
+      "choices": [
+        {
+          "value": "attribute",
+          "label": "attribute"
+        },
+        {
+          "value": "attributeType",
+          "label": "attributeType"
+        },
+        {
+          "value": "collectionHardware",
+          "label": "collectionHardware"
+        },
+        {
+          "value": "collectionSession",
+          "label": "collectionSession"
+        },
+        {
+          "value": "dataset",
+          "label": "dataset"
+        },
+        {
+          "value": "series",
+          "label": "series"
+        },
+        {
+          "value": "nonGeographicDataset",
+          "label": "nonGeographicDataset"
+        },
+        {
+          "value": "dimensionGroup",
+          "label": "dimensionGroup"
+        },
+        {
+          "value": "feature",
+          "label": "feature"
+        },
+        {
+          "value": "featureType",
+          "label": "featureType"
+        },
+        {
+          "value": "propertyType",
+          "label": "propertyType"
+        },
+        {
+          "value": "fieldSession",
+          "label": "fieldSession"
+        },
+        {
+          "value": "software",
+          "label": "software"
+        },
+        {
+          "value": "service",
+          "label": "service"
+        },
+        {
+          "value": "model",
+          "label": "model"
+        },
+        {
+          "value": "tile",
+          "label": "tile"
+        },
+        {
+          "value": "metadata",
+          "label": "metadata"
+        },
+        {
+          "value": "initiative",
+          "label": "initiative"
+        },
+        {
+          "value": "sample",
+          "label": "sample"
+        },
+        {
+          "value": "document",
+          "label": "document"
+        },
+        {
+          "value": "repository",
+          "label": "repository"
+        },
+        {
+          "value": "aggregate",
+          "label": "aggregate"
+        },
+        {
+          "value": "product",
+          "label": "product"
+        },
+        {
+          "value": "collection",
+          "label": "collection"
+        },
+        {
+          "value": "coverage",
+          "label": "coverage"
+        },
+        {
+          "value": "application",
+          "label": "application"
+        }
+      ]
+      },
+
+      {
+        "iso_path":["MD_Metadatascope","resourceScope","MD_ScopeCode"],
+        "field_name": "scope_name",
+        "label": "Name"
+      }
+    ]},
+
+    {
       "field_name": "status",
       "label": "Status",
       "preset": "select",
@@ -86,6 +212,93 @@
         }
      ]
     },
+
+
+
+    {
+      "iso_path":["MD_MetadataScope","CI_Date"],
+      "field_name": "CI_Date",
+      "label": "Dates",
+      "preset": "composite_repeating",
+      "form_blanks": 1,
+      "subfields": [{
+          "field_name": "date",
+          "label": "Date",
+          "preset": "date",
+          "form_placeholder": "yyyy-mm-mm"
+        },
+        {
+          "field_name": "dateType",
+          "label": "Type",
+          "choices": [{
+              "value": "creation",
+              "label": "Creation"
+            },
+            {
+              "value": "publication",
+              "label": "Publication"
+            },
+            {
+              "value": "revision",
+              "label": "Revision"
+            },
+            {
+              "value": "expiry",
+              "label": "Expiry"
+            },
+            {
+              "value": "lastUpdate",
+              "label": "Last Update"
+            },
+            {
+              "value": "lastRevision",
+              "label": "Last Revision"
+            },
+            {
+              "value": "nextUpdate",
+              "label": "Next Update"
+            },
+            {
+              "value": "unavailable",
+              "label": "Unavailable"
+            },
+            {
+              "value": "inForce",
+              "label": "In Force"
+            },
+            {
+              "value": "adopted",
+              "label": "Adopted"
+            },
+            {
+              "value": "deprecated",
+              "label": "Deprecated"
+            },
+            {
+              "value": "superseded",
+              "label": "Superseded"
+            },
+            {
+              "value": "validityBegins",
+              "label": "Validity Begins"
+            },
+            {
+              "value": "validityExpires",
+              "label": "Validity Expires"
+            },
+            {
+              "value": "released",
+              "label": "Released"
+            },
+            {
+              "value": "distribution",
+              "label": "Distribution"
+            }
+          ]
+        }
+      ]
+    },
+
     {
       "field_name": "metadata_created",
       "label": "Metadata Created",
@@ -93,32 +306,38 @@
       "form_placeholder": "yyyy-mm-mm"
     },
     {
+     "iso_path": ["MD_Metadata","MD_Identifier","CI_Citation","CI_Responsibility"],
      "field_name": "CI_ResponsibleParty",
      "label": "Responsible Party",
      "preset": "composite",
      "subfields":[
          {
+           "iso_path": ["CI_Party","name","CharacterString"],
            "field_name": "RP_name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
            "hint": "name of orginization or individual"
          },
-
          {
+           "iso_path": ["CI_Party","CI_Contact","affiliation","CharacterString"],
            "field_name": "RP_affiliation",
            "label": "Affiliation",
            "preset": "dataset_organization"
          },
          {
+           "iso_path": ["CI_Party","CI_Contact","address","CharacterString"],
            "field_name": "RP_city",
            "label": "City"
          },
          {
+           "iso_path": ["CI_Address","electronicMailAddress","CharacterString"],
            "field_name": "RP_email",
            "label": "Email",
            "form_placeholder": "joe@example.com"
           },
+
          {
+           "iso_path": ["role","CI_RoleCode"],
            "field_name": "RP_role",
            "label": "Role",
            "preset": "select",
@@ -166,6 +385,50 @@
              {
                "value": "user",
                "label": "User"
+             },
+             {
+               "value": "sponsor",
+               "label": "Sponsor"
+             }
+             ,
+             {
+               "value": "coAuthor",
+               "label": "Co Author"
+             }
+             ,
+             {
+               "value": "collaborator",
+               "label": "Collaborator"
+             }
+             ,
+             {
+               "value": "editor",
+               "label": "Editor"
+             }
+             ,
+             {
+               "value": "mediator",
+               "label": "Mediator"
+             }
+             ,
+             {
+               "value": "rightsHolder",
+               "label": "Rights Holder"
+             }
+             ,
+             {
+               "value": "contributor",
+               "label": "Contributor"
+             }
+             ,
+             {
+               "value": "funder",
+               "label": "Funder"
+             }
+             ,
+             {
+               "value": "stakeholder",
+               "label": "Stakeholder"
              }
           ]
         }
