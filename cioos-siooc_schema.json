@@ -8,6 +8,7 @@
       "field_name": "title",
       "label": "Title",
       "preset": "title",
+      "required": true,
       "form_placeholder": "eg. A descriptive title"
     },
     {
@@ -20,6 +21,7 @@
       "field_name": "notes",
       "label": "Abstract",
       "form_snippet": "markdown.html",
+      "required": true,
       "form_placeholder": "eg. Some useful notes about the data"
     },
     {
@@ -32,6 +34,7 @@
       "field_name": "tag_string",
       "label": "Keywords",
       "preset": "tag_string_autocomplete",
+      "required": true,
       "form_placeholder": "eg. economy, mental health, government"
     },
     {
@@ -45,12 +48,14 @@
      "field_name": "MD_Scope",
      "label": "Scope",
      "preset": "composite",
+     "required": true,
      "subfields":[
     {
       "iso_path":["MD_Metadatascope","resourceScope","MD_ScopeCode"],
       "field_name": "scope_code",
       "label": "Code",
       "preset": "select",
+      "required": true,
       "choices": [
         {
           "value": "attribute",
@@ -170,62 +175,83 @@
       "field_name": "status",
       "label": "Status",
       "preset": "select",
+      "required": true,
       "choices": [
         {
           "value": "completed",
-          "label": "Completed"
-        },
-        {
-          "value": "archived",
-          "label": "Archived"
-        },
-        {
-          "value": "on_going",
+          "label": "completed"
+        }, {
+          "value": "historicalArchive",
+          "label": "Historical Archive"
+        }, {
+          "value": "obsolete",
+          "label": "Obsolete"
+        }, {
+          "value": "onGoing",
           "label": "On Going"
-        },
-        {
+        }, {
           "value": "planned",
           "label": "Planned"
-        },
-        {
+        }, {
           "value": "required",
           "label": "Required"
-        },
-        {
-          "value": "under_development",
+        }, {
+          "value": "underDevelopment",
           "label": "Under Development"
+        }, {
+          "value": "final",
+          "label": "Final"
+        }, {
+          "value": "pending",
+          "label": "Pending"
+        }, {
+          "value": "retired",
+          "label": "Retired"
+        }, {
+          "value": "superseded",
+          "label": "Superseded"
+        }, {
+          "value": "tentative",
+          "label": "Tentative"
+        }, {
+          "value": "valid",
+          "label": "Valid"
+        }, {
+          "value": "accepted",
+          "label": "Accepted"
+        }, {
+          "value": "notAccepted",
+          "label": "Not Accepted"
+        }, {
+          "value": "withdrawn",
+          "label": "Withdrawn"
+        }, {
+          "value": "proposed",
+          "label": "Proposed"
+        }, {
+          "value": "deprecated",
+          "label": "Deprecated"
         }
-     ]
+      ]
     },
     {
-      "field_name": "defaultLocale",
-      "label": "Default Locale",
-      "preset": "select",
-      "choices": [
-        {
-          "value": "EN",
-          "label": "English"
-        },
-        {
-          "value": "FR",
-          "label": "French"
-        }
-     ]
+      "field_name": "metadata_created",
+      "label": "Metadata Created",
+      "preset": "date",
+      "required": true,
+      "form_placeholder": "yyyy-mm-mm"
     },
-
-
-
     {
       "iso_path":["MD_MetadataScope","CI_Date"],
       "field_name": "CI_Date",
-      "label": "Dates",
+      "label": "Other Dates",
       "preset": "composite_repeating",
       "form_blanks": 1,
       "subfields": [{
           "field_name": "date",
           "label": "Date",
           "preset": "date",
-          "form_placeholder": "yyyy-mm-mm"
+          "form_placeholder": "yyyy-mm-dd"
         },
         {
           "field_name": "dateType",
@@ -300,21 +326,79 @@
     },
 
     {
-      "field_name": "metadata_created",
-      "label": "Metadata Created",
-      "preset": "date",
-      "form_placeholder": "yyyy-mm-mm"
-    },
+      "field_name": "maintenanceAndUpdateFrequency",
+      "label": "Maintenance and update frequency",
+      "preset": "select",
+      "required": true,
+      "choices": [
+        {
+          "value": "continual",
+          "label": "Continual"
+        },
+        {
+          "value": "daily",
+          "label": "Daily"
+        },
+        {
+          "value": "weekly",
+          "label": "Weekly"
+        },
+        {
+          "value": "Fortnightly",
+          "label": "Fortnightly"
+        },
+        {
+          "value": "monthly",
+          "label": "Monthly"
+        },
+        {
+          "value": "quarterly",
+          "label": "Quarterly"
+        },
+        {
+          "value": "bianually",
+          "label": "Bianually"
+        },
+        {
+          "value": "annually",
+          "label": "Annually"
+        },
+        {
+          "value": "as_needed",
+          "label": "As Needed"
+        },
+        {
+          "value": "irregular",
+          "label": "Irregular"
+        },
+        {
+          "value": "not_planned",
+          "label": "Not Planned"
+        },
+        {
+          "value": "unknown",
+          "label": "Unknown"
+        }
+     ]
+   },
+   {
+         "field_name": "maintenanceNote",
+         "label": "Maintenance Note"
+   },
+
+
     {
      "iso_path": ["MD_Metadata","MD_Identifier","CI_Citation","CI_Responsibility"],
      "field_name": "CI_ResponsibleParty",
      "label": "Responsible Party",
      "preset": "composite",
+     "required": true,
      "subfields":[
          {
            "iso_path": ["CI_Party","name","CharacterString"],
            "field_name": "RP_name",
            "label": "Name",
+           "required": true,
            "form_placeholder": "Joe Bloggs",
            "hint": "name of orginization or individual"
          },
@@ -332,6 +416,7 @@
          {
            "iso_path": ["CI_Address","electronicMailAddress","CharacterString"],
            "field_name": "RP_email",
+           "required": true,
            "label": "Email",
            "form_placeholder": "joe@example.com"
           },
@@ -341,6 +426,7 @@
            "field_name": "RP_role",
            "label": "Role",
            "preset": "select",
+           "required": true,
            "choices": [
              {
                "value": "author",
@@ -436,104 +522,111 @@
     },
 
     {
-      "field_name": "maintenanceAndUpdateFrequency",
-      "label": "Maintenance and update frequency",
-      "preset": "select",
-      "choices": [
-        {
-          "value": "continual",
-          "label": "Continual"
-        },
-        {
-          "value": "daily",
-          "label": "Daily"
-        },
-        {
-          "value": "weekly",
-          "label": "Weekly"
-        },
-        {
-          "value": "Fortnightly",
-          "label": "Fortnightly"
-        },
-        {
-          "value": "monthly",
-          "label": "Monthly"
-        },
-        {
-          "value": "quarterly",
-          "label": "Quarterly"
-        },
-        {
-          "value": "bianually",
-          "label": "Bianually"
-        },
-        {
-          "value": "annually",
-          "label": "Annually"
-        },
-        {
-          "value": "as_needed",
-          "label": "As Needed"
-        },
-        {
-          "value": "irregular",
-          "label": "Irregular"
-        },
-        {
-          "value": "not_planned",
-          "label": "Not Planned"
-        },
-        {
-          "value": "unknown",
-          "label": "Unknown"
-        }
-     ]
-   },
-   {
-         "field_name": "maintenanceNote",
-         "label": "Maintenance Note"
-   },
-   {
-      "field_name": "citation_identifier",
-      "label": "Citation identifier",
-      "form_placeholder": "http://doi.org/12345.67890",
-      "display_property": "foaf:homepage",
-      "display_snippet": "link.html"
-    },
-    {
-      "field_name": "owner_org",
-      "label": "Organization",
-      "preset": "dataset_organization"
-    },
-    {
-      "field_name": "version",
-      "label": "Version",
-      "validators": "ignore_missing unicode package_version_validator",
-      "form_placeholder": "1.0"
-    },
-    {
       "field_name": "author",
       "label": "Authors",
       "preset": "composite_repeating",
+      "required": true,
       "form_blanks": 1,
       "subfields": [{
           "field_name": "name",
           "label": "Name",
+          "required": true,
           "form_placeholder": "eg. John Smith"
         },
         {
           "field_name": "type",
           "label": "Type",
-          "choices": [{
+          "required": true,
+          "choices": [
+            {
+              "value": "author",
+              "label": "Author"
+            },
+            {
+              "value": "custodian",
+              "label": "Custodian"
+            },
+            {
+              "value": "distributor",
+              "label": "Distributor"
+            },
+            {
+              "value": "originator",
+              "label": "Originator"
+            },
+            {
+              "value": "owner",
+              "label": "Owner"
+            },
+            {
+              "value": "pointOfContact",
+              "label": "Point of Contact"
+            },
+            {
+              "value": "principalInvestigator",
+              "label": "Principal Investigator"
+            },
+            {
+              "value": "processor",
+              "label": "Processor"
+            },
+            {
+              "value": "publisher",
+              "label": "Publisher"
+            },
+            {
+              "value": "resourceProvider",
+              "label": "Resource Provider"
+            },
+            {
+              "value": "user",
+              "label": "User"
+            },
+            {
+              "value": "sponsor",
+              "label": "Sponsor"
+            }
+            ,
+            {
+              "value": "coAuthor",
+              "label": "Co Author"
+            }
+            ,
+            {
               "value": "collaborator",
               "label": "Collaborator"
-            },
+            }
+            ,
             {
               "value": "editor",
               "label": "Editor"
             }
-          ]
+            ,
+            {
+              "value": "mediator",
+              "label": "Mediator"
+            }
+            ,
+            {
+              "value": "rightsHolder",
+              "label": "Rights Holder"
+            }
+            ,
+            {
+              "value": "contributor",
+              "label": "Contributor"
+            }
+            ,
+            {
+              "value": "funder",
+              "label": "Funder"
+            }
+            ,
+            {
+              "value": "stakeholder",
+              "label": "Stakeholder"
+            }
+         ]
         }
       ]
     },
@@ -584,8 +677,42 @@
           "label": "Max"
         }
       ]
-    }
+    },
 
+
+    {
+      "field_name": "defaultLocale",
+      "label": "Default Locale",
+      "preset": "select",
+      "choices": [
+        {
+          "value": "EN",
+          "label": "English"
+        },
+        {
+          "value": "FR",
+          "label": "French"
+        }
+     ]
+    },
+    {
+       "field_name": "citation_identifier",
+       "label": "Citation identifier",
+       "form_placeholder": "http://doi.org/12345.67890",
+       "display_property": "foaf:homepage",
+       "display_snippet": "link.html"
+     },
+     {
+       "field_name": "owner_org",
+       "label": "Organization",
+       "preset": "dataset_organization"
+     },
+     {
+       "field_name": "version",
+       "label": "Version",
+       "validators": "ignore_missing unicode package_version_validator",
+       "form_placeholder": "1.0"
+     }
 
   ],
   "resource_fields": [
