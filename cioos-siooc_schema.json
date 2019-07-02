@@ -234,17 +234,11 @@
         }
       ]
     },
-    {
-      "field_name": "metadata_created",
-      "label": "Metadata Created",
-      "preset": "date",
-      "required": true,
-      "form_placeholder": "yyyy-mm-mm"
-    },
+
     {
       "iso_path":["MD_MetadataScope","CI_Date"],
       "field_name": "CI_Date",
-      "label": "Other Dates",
+      "label": "Dates",
       "preset": "composite_repeating",
       "form_blanks": 1,
       "subfields": [{
@@ -256,10 +250,7 @@
         {
           "field_name": "dateType",
           "label": "Type",
-          "choices": [{
-              "value": "creation",
-              "label": "Creation"
-            },
+          "choices": [
             {
               "value": "publication",
               "label": "Publication"
@@ -528,13 +519,13 @@
       "required": true,
       "form_blanks": 1,
       "subfields": [{
-          "field_name": "name",
+          "field_name": "author_name",
           "label": "Name",
           "required": true,
           "form_placeholder": "eg. John Smith"
         },
         {
-          "field_name": "type",
+          "field_name": "author_type",
           "label": "Type",
           "required": true,
           "choices": [
@@ -657,11 +648,15 @@
       "preset": "composite",
       "subfields": [{
           "field_name": "temporal-extent-begin",
-          "label": "Begin"
+          "label": "Begin",
+          "preset": "date",
+          "form_placeholder": "yyyy-mm-dd"
         },
         {
           "field_name": "temporal-extent-end",
-          "label": "End"
+          "label": "End",
+          "preset": "date",
+          "form_placeholder": "yyyy-mm-dd"
         }
       ]
     }, {
@@ -670,11 +665,13 @@
       "preset": "composite",
       "subfields": [{
           "field_name": "vertical-extent-min",
-          "label": "Min"
+          "label": "Min",
+          "preset": "number"
         },
         {
           "field_name": "vertical-extent-max",
-          "label": "Max"
+          "label": "Max",
+          "preset": "number"
         }
       ]
     },
