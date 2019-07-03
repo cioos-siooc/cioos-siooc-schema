@@ -27,7 +27,6 @@
       "field_name": "notes_translated",
       "preset": "fluent_markdown",
       "label": "Description",
-      "form_snippet": "markdown.html",
       "required": true,
       "form_placeholder": {
         "fr": "par exemple: quelques notes utiles sur les données",
@@ -260,6 +259,7 @@
           "field_name": "date",
           "label": "Date",
           "preset": "date",
+          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
           "form_placeholder": "yyyy-mm-dd"
         },
         {
@@ -675,12 +675,14 @@
           "field_name": "temporal-extent-begin",
           "label": "Begin",
           "preset": "date",
+          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
           "form_placeholder": "yyyy-mm-dd"
         },
         {
           "field_name": "temporal-extent-end",
           "label": "End",
           "preset": "date",
+          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
           "form_placeholder": "yyyy-mm-dd"
         }
       ]
@@ -691,12 +693,14 @@
       "subfields": [{
           "field_name": "vertical-extent-min",
           "label": "Min",
-          "preset": "number"
+          "preset": "number",
+          "form_attrs":{"pattern":"[0-9.]+"}
         },
         {
           "field_name": "vertical-extent-max",
           "label": "Max",
-          "preset": "number"
+          "preset": "number",
+          "form_attrs":{"pattern":"[0-9.]+"}
         }
       ]
     },
