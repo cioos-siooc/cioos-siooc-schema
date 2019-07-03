@@ -1,15 +1,21 @@
 {
   "scheming_version": 1,
   "dataset_type": "dataset",
-  "about": "A reimplementation of the default CKAN dataset schema",
+  "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
+  "form_languages": ["en", "fr"],
   "dataset_fields": [
     {
-      "field_name": "title",
-      "label": "Title",
-      "preset": "title",
-      "required": true,
-      "form_placeholder": "eg. A descriptive title"
+      "field_name": "title_translated",
+      "preset": "fluent_core_translated",
+      "label": {
+        "fr": "Titre",
+        "en": "Title"
+      },
+      "form_placeholder": {
+        "fr": "p. ex. Un titre descriptif",
+        "en": "eg. A descriptive title"
+      }
     },
     {
       "field_name": "name",
@@ -18,11 +24,15 @@
       "form_placeholder": "eg. my-dataset"
     },
     {
-      "field_name": "notes",
-      "label": "Abstract",
+      "field_name": "notes_translated",
+      "preset": "fluent_markdown",
+      "label": "Description",
       "form_snippet": "markdown.html",
       "required": true,
-      "form_placeholder": "eg. Some useful notes about the data"
+      "form_placeholder": {
+        "fr": "par exemple: quelques notes utiles sur les données",
+        "en": "eg. Some useful notes about the data"
+      }
     },
     {
       "field_name": "purpose",
@@ -31,11 +41,16 @@
       "form_placeholder": "eg. Intented use of the dataset or reason for collecting"
     },
     {
-      "field_name": "tag_string",
-      "label": "Keywords",
-      "preset": "tag_string_autocomplete",
-      "required": true,
-      "form_placeholder": "eg. economy, mental health, government"
+      "field_name": "tag_string_translated",
+      "preset": "fluent_tags",
+      "label": {
+        "fr": "Mots-clés",
+        "en": "Keywords"
+      },
+      "form_placeholder": {
+        "fr": "p. ex. économie, santé mentale, gouvernement",
+        "en": "eg. economy, mental health, government"
+      }
     },
     {
       "field_name": "license_id",
@@ -522,12 +537,22 @@
           "field_name": "author_name",
           "label": "Name",
           "required": true,
+          "display_property": "dc:creator",
           "form_placeholder": "eg. John Smith"
+        },
+        {
+          "field_name": "author_email",
+          "label": "Email",
+          "form_placeholder": "joe@example.com",
+          "display_property": "dc:creator",
+          "display_snippet": "email.html",
+          "display_email_name_field": "author"
         },
         {
           "field_name": "author_type",
           "label": "Type",
           "required": true,
+          "display_property": "dc:creator",
           "choices": [
             {
               "value": "author",
