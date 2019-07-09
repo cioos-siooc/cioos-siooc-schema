@@ -350,7 +350,7 @@
           "label": "Weekly"
         },
         {
-          "value": "Fortnightly",
+          "value": "fortnightly",
           "label": "Fortnightly"
         },
         {
@@ -370,7 +370,7 @@
           "label": "Annually"
         },
         {
-          "value": "as_needed",
+          "value": "asNeeded",
           "label": "As Needed"
         },
         {
@@ -378,7 +378,7 @@
           "label": "Irregular"
         },
         {
-          "value": "not_planned",
+          "value": "notPlanned",
           "label": "Not Planned"
         },
         {
