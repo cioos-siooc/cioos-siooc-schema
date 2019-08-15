@@ -57,6 +57,114 @@
       }
     },
     {
+      "field_name": "eov",
+      "label": "Ocean Variables",
+      "preset": "multiple_select",
+      "required": true,
+      "validators": "scheming_multiple_choice cioos_clean_and_populate_eovs",
+      "choices":[{
+          "category": "Biogeochemical",
+          "value": "oxygen",
+          "label": "Oxygen"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceHeight",
+          "label": "Sea Surface Height"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nutrients",
+          "label": "Nutrients"
+        },
+        {
+          "category": "Physical",
+          "value": "seawaterDensity",
+          "label": "Seawater Density"
+        },
+        {
+          "category": "Physical",
+          "value": "potentialTemperature",
+          "label": "Potential Temperature"
+        },
+        {
+          "category": "Physical",
+          "value": "potentialDensity",
+          "label": "Potential Density"
+        },
+        {
+          "category": "Physical",
+          "value": "speedOfSound",
+          "label": "Speed of Sound"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nitrate",
+          "label": "Nitrate"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "phosphate",
+          "label": "Phosphate"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "silicate",
+          "label": "Silicate"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "inorganicCarbon",
+          "label": "Inorganic Carbon"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "dissolvedOrganicCarbon",
+          "label": "Dissolved Organic Carbon"
+        },
+        {
+          "category": "Physical",
+          "value": "seaIce",
+          "label": "Sea Ice"
+        },
+        {
+          "category": "Physical",
+          "value": "seaState",
+          "label": "Sea State"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceSalinity",
+          "label": "Sea Surface Salinity"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceTemperature",
+          "label": "Sea Surface Temperature"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceCurrents",
+          "label": "Sub Surface Currents"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceSalinity",
+          "label": "Sub Surface Salinity"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceTemperature",
+          "label": "Sub Surface Temperature"
+        },
+        {
+          "category": "Physical",
+          "value": "surfaceCurrents",
+          "label": "Surface Currents"
+        }
+      ]
+    },
+    {
       "field_name": "license_id",
       "label": "License",
       "display_snippet": null,
@@ -67,6 +175,7 @@
       "field_name": "resource-type",
       "label": "Scope",
       "preset": "select",
+      "display_snippet": "select.html",
       "required": true,
       "choices": [
         {
@@ -179,6 +288,7 @@
       "field_name": "progress",
       "label": "Status",
       "preset": "select",
+      "display_snippet": "select.html",
       "required": true,
       "choices": [
         {
@@ -325,6 +435,7 @@
       "field_name": "frequency-of-update",
       "label": "Maintenance and update frequency",
       "preset": "select",
+      "display_snippet": "select.html",
       "display_snippet": null,
       "required": true,
       "choices": [
@@ -417,6 +528,7 @@
            "field_name": "role",
            "label": "Role",
            "preset": "select",
+           "display_snippet": "select.html",
            "required": true,
            "choices": [
              {
@@ -544,6 +656,7 @@
            "field_name": "role",
            "label": "Role",
            "preset": "select",
+           "display_snippet": "select.html",
            "required": true,
            "choices": [
              {
@@ -703,6 +816,7 @@
       "field_name": "defaultLocale",
       "label": "Default Locale",
       "preset": "select",
+      "display_snippet": "select.html",
       "choices": [
         {
           "value": "EN",
