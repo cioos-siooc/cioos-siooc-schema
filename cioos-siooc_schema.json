@@ -14,6 +14,8 @@
         "fr": "Titre",
         "en": "Title"
       },
+      "slug_lang": ["en"],
+      "form_attrs": {"data-module": "slug-preview-target"},
       "form_placeholder": {
         "fr": "p. ex. Un titre descriptif",
         "en": "eg. A descriptive title"
@@ -23,6 +25,7 @@
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
+      "form_attrs": {"data-module": "slug-preview-slug"},
       "form_placeholder": "eg. my-dataset"
     },
     {
@@ -351,19 +354,19 @@
 
     {
       "iso_path":["MD_MetadataScope","CI_Date"],
-      "field_name": "CI_Date",
+      "field_name": "dataset-reference-date",
       "label": "Dates",
       "preset": "composite_repeating",
       "form_blanks": 1,
       "subfields": [{
-          "field_name": "date",
+          "field_name": "value",
           "label": "Date",
           "preset": "date",
           "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
           "form_placeholder": "yyyy-mm-dd"
         },
         {
-          "field_name": "dateType",
+          "field_name": "type",
           "label": "Type",
           "choices": [
             {
@@ -829,7 +832,7 @@
      ]
     },
     {
-       "field_name": "citation_identifier",
+       "field_name": "unique-resource-identifier",
        "label": "Citation identifier",
        "form_placeholder": "http://doi.org/12345.67890",
        "display_property": "foaf:homepage",
