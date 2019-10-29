@@ -40,12 +40,6 @@
       }
     },
     {
-      "field_name": "purpose",
-      "label": "Purpose",
-      "form_snippet": "markdown.html",
-      "form_placeholder": "eg. Intented use of the dataset or reason for collecting"
-    },
-    {
       "field_name": "keywords",
       "preset": "fluent_tags",
       "display_snippet": null,
@@ -353,7 +347,6 @@
     },
 
     {
-      "iso_path":["MD_MetadataScope","CI_Date"],
       "field_name": "dataset-reference-date",
       "label": "Dates",
       "preset": "composite_repeating",
@@ -493,20 +486,18 @@
      ]
    },
    {
-         "field_name": "maintenanceNote",
+         "field_name": "maintenance-note",
          "label": "Maintenance Note"
    },
 
 
     {
-     "iso_path": ["MD_Metadata","MD_Identifier","CI_Citation","CI_Responsibility"],
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
      "preset": "composite",
      "required": true,
      "subfields":[
          {
-           "iso_path": ["CI_Party","name","CharacterString"],
            "field_name": "individual-name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
@@ -514,7 +505,6 @@
            "hint": "name of orginization or individual"
          },
          {
-           "iso_path": ["CI_Party","CI_Contact","affiliation","CharacterString"],
            "field_name": "organisation-name",
            "label": "Affiliation",
            "preset": "dataset_organization"
@@ -628,21 +618,18 @@
     },
 
     {
-     "iso_path": ["MD_Metadata","MD_Identifier","CI_Citation","CI_Responsibility"],
      "field_name": "cited-responsible-party",
      "label": "Responsible Party",
      "preset": "composite_repeating",
      "required": true,
      "subfields":[
          {
-           "iso_path": ["CI_Party","name","CharacterString"],
            "field_name": "individual-name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
            "hint": "name of orginization or individual"
          },
          {
-           "iso_path": ["CI_Party","CI_Contact","affiliation","CharacterString"],
            "field_name": "organisation-name",
            "label": "Affiliation",
            "preset": "dataset_organization"
@@ -816,28 +803,51 @@
 
 
     {
-      "field_name": "defaultLocale",
+      "field_name": "metadata-language",
       "label": "Default Locale",
       "preset": "select",
       "display_snippet": "select.html",
       "choices": [
         {
-          "value": "EN",
+          "value": "en",
           "label": "English"
         },
         {
-          "value": "FR",
+          "value": "fr",
           "label": "French"
         }
      ]
     },
+
     {
-       "field_name": "unique-resource-identifier",
+       "field_name": "unique-resource-identifier-full",
        "label": "Citation identifier",
-       "form_placeholder": "http://doi.org/12345.67890",
-       "display_property": "foaf:homepage",
-       "display_snippet": "link.html"
+       "help_text": "example: http://doi.org/12345.67890#1",
+       "preset": "composite",
+       "subfields": [
+         {
+           "field_name": "authority",
+           "label": "Authority",
+           "form_placeholder": "doi.org"
+         },
+         {
+           "field_name": "code-space",
+           "label": "Code Space",
+           "form_placeholder": "12345"
+         },
+         {
+           "field_name": "code",
+           "label": "Code",
+           "form_placeholder": "67890"
+         },
+         {
+           "field_name": "version",
+           "label": "Version",
+           "form_placeholder": "1"
+         }
+       ]
      },
+
      {
        "field_name": "owner_org",
        "label": "Organization",
