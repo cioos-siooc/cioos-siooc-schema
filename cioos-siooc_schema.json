@@ -363,6 +363,10 @@
           "label": "Type",
           "choices": [
             {
+              "value": "creation",
+              "label": "Creation"
+            },
+            {
               "value": "publication",
               "label": "Publication"
             },
