@@ -851,7 +851,15 @@
          }
        ]
      },
-
+     {
+       "field_name": "xml_location_url",
+       "label": "XML Metadata File Location",
+       "form_placeholder":"http://waf/location/xml_metadata_file.xml",
+       "display_property":"foaf:homepage",
+       "display_snippet":"link.html",
+       "required": true,
+       "display_snippet": null
+     },
      {
        "field_name": "owner_org",
        "label": "Organization",
