@@ -62,102 +62,122 @@
       "choices":[{
           "category": "Biogeochemical",
           "value": "oxygen",
-          "label": "Oxygen"
+          "label": "Oxygen",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "seaSurfaceHeight",
-          "label": "Sea Surface Height"
+          "label": "Sea Surface Height",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Biogeochemical",
           "value": "nutrients",
-          "label": "Nutrients"
+          "label": "Nutrients",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "seawaterDensity",
-          "label": "Seawater Density"
+          "label": "Seawater Density",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "potentialTemperature",
-          "label": "Potential Temperature"
+          "label": "Potential Temperature",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "potentialDensity",
-          "label": "Potential Density"
+          "label": "Potential Density",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "speedOfSound",
-          "label": "Speed of Sound"
+          "label": "Speed of Sound",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Biogeochemical",
           "value": "nitrate",
-          "label": "Nitrate"
+          "label": "Nitrate",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Biogeochemical",
           "value": "phosphate",
-          "label": "Phosphate"
+          "label": "Phosphate",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Biogeochemical",
           "value": "silicate",
-          "label": "Silicate"
+          "label": "Silicate",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Biogeochemical",
           "value": "inorganicCarbon",
-          "label": "Inorganic Carbon"
+          "label": "Inorganic Carbon",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Biogeochemical",
           "value": "dissolvedOrganicCarbon",
-          "label": "Dissolved Organic Carbon"
+          "label": "Dissolved Organic Carbon",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "seaIce",
-          "label": "Sea Ice"
+          "label": "Sea Ice",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "seaState",
-          "label": "Sea State"
+          "label": "Sea State",
+          "icon": "icon_ice.png"
         },
         {
           "category": "Physical",
           "value": "seaSurfaceSalinity",
-          "label": "Sea Surface Salinity"
+          "label": "Sea Surface Salinity",
+          "icon": "icon_salt.png"
         },
         {
           "category": "Physical",
           "value": "seaSurfaceTemperature",
-          "label": "Sea Surface Temperature"
+          "label": "Sea Surface Temperature",
+          "icon": "icon_temp.png"
         },
         {
           "category": "Physical",
           "value": "subSurfaceCurrents",
-          "label": "Sub Surface Currents"
+          "label": "Sub Surface Currents",
+          "icon": "icon_current.png"
         },
         {
           "category": "Physical",
           "value": "subSurfaceSalinity",
-          "label": "Sub Surface Salinity"
+          "label": "Sub Surface Salinity",
+          "icon": "icon_salt.png"
         },
         {
           "category": "Physical",
           "value": "subSurfaceTemperature",
-          "label": "Sub Surface Temperature"
+          "label": "Sub Surface Temperature",
+          "icon": "icon_temp.png"
         },
         {
           "category": "Physical",
           "value": "surfaceCurrents",
-          "label": "Surface Currents"
+          "label": "Surface Currents",
+          "icon": "icon_current.png"
         }
       ]
     },
