@@ -63,121 +63,121 @@
           "category": "Biogeochemical",
           "value": "oxygen",
           "label": "Oxygen",
-          "icon": "icon_ice.png"
+          "icon": "dissolved-oxygen.svg"
         },
         {
           "category": "Physical",
           "value": "seaSurfaceHeight",
           "label": "Sea Surface Height",
-          "icon": "icon_ice.png"
+          "icon": "sea-level.svg"
         },
         {
           "category": "Biogeochemical",
           "value": "nutrients",
           "label": "Nutrients",
-          "icon": "icon_ice.png"
+          "icon": "nutrients.svg"
         },
         {
           "category": "Physical",
           "value": "seawaterDensity",
           "label": "Seawater Density",
-          "icon": "icon_ice.png"
+          "icon": "sea-surface-stress.svg"
         },
         {
           "category": "Physical",
           "value": "potentialTemperature",
           "label": "Potential Temperature",
-          "icon": "icon_ice.png"
+          "icon": "temperature.svg"
         },
         {
           "category": "Physical",
           "value": "potentialDensity",
           "label": "Potential Density",
-          "icon": "icon_ice.png"
+          "icon": "sea-surface-stress.svg"
         },
         {
           "category": "Physical",
           "value": "speedOfSound",
           "label": "Speed of Sound",
-          "icon": "icon_ice.png"
+          "icon": "sea-surface-stress.svg"
         },
         {
           "category": "Biogeochemical",
           "value": "nitrate",
           "label": "Nitrate",
-          "icon": "icon_ice.png"
+          "icon": "nutrients.svg"
         },
         {
           "category": "Biogeochemical",
           "value": "phosphate",
           "label": "Phosphate",
-          "icon": "icon_ice.png"
+          "icon": "nutrients.svg"
         },
         {
           "category": "Biogeochemical",
           "value": "silicate",
           "label": "Silicate",
-          "icon": "icon_ice.png"
+          "icon": "nutrients.svg"
         },
         {
           "category": "Biogeochemical",
           "value": "inorganicCarbon",
           "label": "Inorganic Carbon",
-          "icon": "icon_ice.png"
+          "icon": "inorganic-carbon.svg"
         },
         {
           "category": "Biogeochemical",
           "value": "dissolvedOrganicCarbon",
           "label": "Dissolved Organic Carbon",
-          "icon": "icon_ice.png"
+          "icon": "dissolved-organic-carbon.svg"
         },
         {
           "category": "Physical",
           "value": "seaIce",
           "label": "Sea Ice",
-          "icon": "icon_ice.png"
+          "icon": "sea-ice.svg"
         },
         {
           "category": "Physical",
           "value": "seaState",
           "label": "Sea State",
-          "icon": "icon_ice.png"
+          "icon": "sea-state.svg"
         },
         {
           "category": "Physical",
           "value": "seaSurfaceSalinity",
           "label": "Sea Surface Salinity",
-          "icon": "icon_salt.png"
+          "icon": "salinity.svg"
         },
         {
           "category": "Physical",
           "value": "seaSurfaceTemperature",
           "label": "Sea Surface Temperature",
-          "icon": "icon_temp.png"
+          "icon": "temperature.svg"
         },
         {
           "category": "Physical",
           "value": "subSurfaceCurrents",
           "label": "Sub Surface Currents",
-          "icon": "icon_current.png"
+          "icon": "currents.svg"
         },
         {
           "category": "Physical",
           "value": "subSurfaceSalinity",
           "label": "Sub Surface Salinity",
-          "icon": "icon_salt.png"
+          "icon": "salinity.svg"
         },
         {
           "category": "Physical",
           "value": "subSurfaceTemperature",
           "label": "Sub Surface Temperature",
-          "icon": "icon_temp.png"
+          "icon": "temperature.svg"
         },
         {
           "category": "Physical",
           "value": "surfaceCurrents",
           "label": "Surface Currents",
-          "icon": "icon_current.png"
+          "icon": "currents.svg"
         }
       ]
     },
