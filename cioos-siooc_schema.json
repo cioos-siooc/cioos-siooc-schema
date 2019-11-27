@@ -81,7 +81,7 @@
           "category": "Physical",
           "value": "seawaterDensity",
           "label": "Seawater Density",
-          "icon": "sea-surface-stress.svg"
+          "icon": "particulate-matter.svg"
         },
         {
           "category": "Physical",
@@ -93,13 +93,13 @@
           "category": "Physical",
           "value": "potentialDensity",
           "label": "Potential Density",
-          "icon": "sea-surface-stress.svg"
+          "icon": "particulate-matter.svg"
         },
         {
           "category": "Physical",
           "value": "speedOfSound",
           "label": "Speed of Sound",
-          "icon": "sea-surface-stress.svg"
+          "icon": "physics.svg"
         },
         {
           "category": "Biogeochemical",
