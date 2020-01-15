@@ -656,6 +656,7 @@
          {
            "field_name": "organisation-name",
            "label": "Affiliation",
+           "required": true,
            "preset": "dataset_organization"
          },
          {
