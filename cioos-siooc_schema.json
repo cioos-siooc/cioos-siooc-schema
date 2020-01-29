@@ -178,6 +178,12 @@
           "value": "surfaceCurrents",
           "label": "Surface Currents",
           "icon": "currents.svg"
+        },
+        {
+          "category": null,
+          "value": "other",
+          "label": "Other",
+          "icon": null
         }
       ]
     },
