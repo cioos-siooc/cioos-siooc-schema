@@ -44,6 +44,10 @@
         "fr": "http://exemple.com/mon-image.jpg",
         "en": "http://example.com/my-image.jpg"
       }
+    },
+    {
+      "field_name": "external_home_url",
+      "label": "External Home Page URL"
     }
   ]
 }
