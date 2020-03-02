@@ -796,7 +796,7 @@
     },
     {
       "field_name": "temporal-extent",
-      "label": "Temportal Extent",
+      "label": "Temporal Extent",
       "preset": "composite",
       "subfields": [{
           "field_name": "begin",
