@@ -4,8 +4,7 @@
   "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "form_languages": ["en", "fr"],
-  "dataset_fields": [
-    {
+  "dataset_fields": [{
       "field_name": "title_translated",
       "preset": "fluent_core_translated",
       "display_snippet": null,
@@ -15,7 +14,9 @@
         "en": "Title"
       },
       "slug_lang": ["en"],
-      "form_attrs": {"data-module": "slug-preview-target"},
+      "form_attrs": {
+        "data-module": "slug-preview-target"
+      },
       "form_placeholder": {
         "fr": "p. ex. Un titre descriptif",
         "en": "eg. A descriptive title"
@@ -25,7 +26,9 @@
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
-      "form_attrs": {"data-module": "slug-preview-slug"},
+      "form_attrs": {
+        "data-module": "slug-preview-slug"
+      },
       "form_placeholder": "eg. my-dataset"
     },
     {
@@ -59,7 +62,7 @@
       "preset": "multiple_select",
       "required": true,
       "validators": "scheming_multiple_choice cioos_clean_and_populate_eovs",
-      "choices":[{
+      "choices": [{
           "category": "Biogeochemical",
           "value": "oxygen",
           "label": "Oxygen",
@@ -200,8 +203,7 @@
       "preset": "select",
       "display_snippet": "select.html",
       "required": true,
-      "choices": [
-        {
+      "choices": [{
           "value": "attribute",
           "label": "attribute"
         },
@@ -313,63 +315,61 @@
       "preset": "select",
       "display_snippet": "select.html",
       "required": true,
-      "choices": [
-        {
-          "value": "completed",
-          "label": "completed"
-        }, {
-          "value": "historicalArchive",
-          "label": "Historical Archive"
-        }, {
-          "value": "obsolete",
-          "label": "Obsolete"
-        }, {
-          "value": "onGoing",
-          "label": "On Going"
-        }, {
-          "value": "planned",
-          "label": "Planned"
-        }, {
-          "value": "required",
-          "label": "Required"
-        }, {
-          "value": "underDevelopment",
-          "label": "Under Development"
-        }, {
-          "value": "final",
-          "label": "Final"
-        }, {
-          "value": "pending",
-          "label": "Pending"
-        }, {
-          "value": "retired",
-          "label": "Retired"
-        }, {
-          "value": "superseded",
-          "label": "Superseded"
-        }, {
-          "value": "tentative",
-          "label": "Tentative"
-        }, {
-          "value": "valid",
-          "label": "Valid"
-        }, {
-          "value": "accepted",
-          "label": "Accepted"
-        }, {
-          "value": "notAccepted",
-          "label": "Not Accepted"
-        }, {
-          "value": "withdrawn",
-          "label": "Withdrawn"
-        }, {
-          "value": "proposed",
-          "label": "Proposed"
-        }, {
-          "value": "deprecated",
-          "label": "Deprecated"
-        }
-      ]
+      "choices": [{
+        "value": "completed",
+        "label": "completed"
+      }, {
+        "value": "historicalArchive",
+        "label": "Historical Archive"
+      }, {
+        "value": "obsolete",
+        "label": "Obsolete"
+      }, {
+        "value": "onGoing",
+        "label": "On Going"
+      }, {
+        "value": "planned",
+        "label": "Planned"
+      }, {
+        "value": "required",
+        "label": "Required"
+      }, {
+        "value": "underDevelopment",
+        "label": "Under Development"
+      }, {
+        "value": "final",
+        "label": "Final"
+      }, {
+        "value": "pending",
+        "label": "Pending"
+      }, {
+        "value": "retired",
+        "label": "Retired"
+      }, {
+        "value": "superseded",
+        "label": "Superseded"
+      }, {
+        "value": "tentative",
+        "label": "Tentative"
+      }, {
+        "value": "valid",
+        "label": "Valid"
+      }, {
+        "value": "accepted",
+        "label": "Accepted"
+      }, {
+        "value": "notAccepted",
+        "label": "Not Accepted"
+      }, {
+        "value": "withdrawn",
+        "label": "Withdrawn"
+      }, {
+        "value": "proposed",
+        "label": "Proposed"
+      }, {
+        "value": "deprecated",
+        "label": "Deprecated"
+      }]
     },
 
     {
@@ -381,14 +381,15 @@
           "field_name": "value",
           "label": "Date",
           "preset": "date",
-          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
+          "form_attrs": {
+            "required pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}"
+          },
           "form_placeholder": "yyyy-mm-dd"
         },
         {
           "field_name": "type",
           "label": "Type",
-          "choices": [
-            {
+          "choices": [{
               "value": "creation",
               "label": "Creation"
             },
@@ -464,8 +465,7 @@
       "display_snippet": "select.html",
       "display_snippet": null,
       "required": true,
-      "choices": [
-        {
+      "choices": [{
           "value": "continual",
           "label": "Continual"
         },
@@ -513,266 +513,328 @@
           "value": "unknown",
           "label": "Unknown"
         }
-     ]
-   },
-   {
-         "field_name": "maintenance-note",
-         "label": "Maintenance Note"
-   },
+      ]
+    },
+    {
+      "field_name": "maintenance-note",
+      "label": "Maintenance Note"
+    },
 
 
     {
-     "field_name": "metadata-point-of-contact",
-     "label": "Point of Contact",
-     "preset": "composite",
-     "required": true,
-     "subfields":[
-         {
-           "field_name": "individual-name",
-           "label": "Name",
-           "form_placeholder": "Joe Bloggs",
-           "required": true,
-           "hint": "name of orginization or individual"
-         },
-         {
-           "field_name": "organisation-name",
-           "label": "Affiliation",
-           "preset": "dataset_organization"
-         },
-         {
-           "field_name": "contact-info_online-resource",
-           "label": "Contact Info Online Resource"
-         },
-         {
-           "field_name": "contact-info_email",
-           "label": "Contact Info Email"
-         },
-         {
-           "field_name": "role",
-           "label": "Role",
-           "preset": "select",
-           "display_snippet": "select.html",
-           "required": true,
-           "choices": [
-             {
-               "value": "author",
-               "label": "Author"
-             },
-             {
-               "value": "custodian",
-               "label": "Custodian"
-             },
-             {
-               "value": "distributor",
-               "label": "Distributor"
-             },
-             {
-               "value": "originator",
-               "label": "Originator"
-             },
-             {
-               "value": "owner",
-               "label": "Owner"
-             },
-             {
-               "value": "pointOfContact",
-               "label": "Point of Contact"
-             },
-             {
-               "value": "principalInvestigator",
-               "label": "Principal Investigator"
-             },
-             {
-               "value": "processor",
-               "label": "Processor"
-             },
-             {
-               "value": "publisher",
-               "label": "Publisher"
-             },
-             {
-               "value": "resourceProvider",
-               "label": "Resource Provider"
-             },
-             {
-               "value": "user",
-               "label": "User"
-             },
-             {
-               "value": "sponsor",
-               "label": "Sponsor"
-             }
-             ,
-             {
-               "value": "coAuthor",
-               "label": "Co Author"
-             }
-             ,
-             {
-               "value": "collaborator",
-               "label": "Collaborator"
-             }
-             ,
-             {
-               "value": "editor",
-               "label": "Editor"
-             }
-             ,
-             {
-               "value": "mediator",
-               "label": "Mediator"
-             }
-             ,
-             {
-               "value": "rightsHolder",
-               "label": "Rights Holder"
-             }
-             ,
-             {
-               "value": "contributor",
-               "label": "Contributor"
-             }
-             ,
-             {
-               "value": "funder",
-               "label": "Funder"
-             }
-             ,
-             {
-               "value": "stakeholder",
-               "label": "Stakeholder"
-             }
+      "field_name": "metadata-point-of-contact",
+      "label": "Point of Contact",
+      "preset": "composite",
+      "required": true,
+      "subfields": [{
+          "field_name": "individual-name",
+          "label": "Name",
+          "form_placeholder": "Joe Bloggs",
+          "required": true,
+          "hint": "name of orginization or individual"
+        },
+        {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "form_placeholder": "0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-name",
+          "label": "Affiliation",
+          "preset": "dataset_organization"
+        },
+        {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "form_placeholder": "0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "contact-info_online-resource_url",
+          "label": "Contact Info Online Resource URL"
+        },
+        {
+          "field_name": "contact-info_email",
+          "label": "Contact Info Email"
+        },
+        {
+          "field_name": "role",
+          "label": "Role",
+          "preset": "select",
+          "display_snippet": "select.html",
+          "required": true,
+          "choices": [{
+              "value": "author",
+              "label": "Author"
+            },
+            {
+              "value": "custodian",
+              "label": "Custodian"
+            },
+            {
+              "value": "distributor",
+              "label": "Distributor"
+            },
+            {
+              "value": "originator",
+              "label": "Originator"
+            },
+            {
+              "value": "owner",
+              "label": "Owner"
+            },
+            {
+              "value": "pointOfContact",
+              "label": "Point of Contact"
+            },
+            {
+              "value": "principalInvestigator",
+              "label": "Principal Investigator"
+            },
+            {
+              "value": "processor",
+              "label": "Processor"
+            },
+            {
+              "value": "publisher",
+              "label": "Publisher"
+            },
+            {
+              "value": "resourceProvider",
+              "label": "Resource Provider"
+            },
+            {
+              "value": "user",
+              "label": "User"
+            },
+            {
+              "value": "sponsor",
+              "label": "Sponsor"
+            },
+            {
+              "value": "coAuthor",
+              "label": "Co Author"
+            },
+            {
+              "value": "collaborator",
+              "label": "Collaborator"
+            },
+            {
+              "value": "editor",
+              "label": "Editor"
+            },
+            {
+              "value": "mediator",
+              "label": "Mediator"
+            },
+            {
+              "value": "rightsHolder",
+              "label": "Rights Holder"
+            },
+            {
+              "value": "contributor",
+              "label": "Contributor"
+            },
+            {
+              "value": "funder",
+              "label": "Funder"
+            },
+            {
+              "value": "stakeholder",
+              "label": "Stakeholder"
+            }
           ]
         }
-     ]
+      ]
     },
 
     {
-     "field_name": "cited-responsible-party",
-     "label": "Responsible Party",
-     "preset": "composite_repeating",
-     "required": true,
-     "subfields":[
-         {
-           "field_name": "individual-name",
-           "label": "Individual Name",
-           "form_placeholder": "Joe Bloggs",
-           "require_one": true,
-           "hint": "name of individual"
-         },
-         {
-           "field_name": "organisation-name",
-           "label": "Organisation Name / Affiliation",
-           "require_one": true,
-           "form_snippet": "organization.html",
-           "hint": "name of orginization or affiliation if individual name is used"
-         },
-         {
-           "field_name": "contact-info_online-resource",
-           "label": "Contact Info Online Resource"
-         },
-         {
-           "field_name": "contact-info_email",
-           "label": "Contact Info Email"
-         },
-         {
-           "field_name": "role",
-           "label": "Role",
-           "preset": "select",
-           "display_snippet": "select.html",
-           "required": true,
-           "choices": [
-             {
-               "value": "author",
-               "label": "Author"
-             },
-             {
-               "value": "custodian",
-               "label": "Custodian"
-             },
-             {
-               "value": "distributor",
-               "label": "Distributor"
-             },
-             {
-               "value": "originator",
-               "label": "Originator"
-             },
-             {
-               "value": "owner",
-               "label": "Owner"
-             },
-             {
-               "value": "pointOfContact",
-               "label": "Point of Contact"
-             },
-             {
-               "value": "principalInvestigator",
-               "label": "Principal Investigator"
-             },
-             {
-               "value": "processor",
-               "label": "Processor"
-             },
-             {
-               "value": "publisher",
-               "label": "Publisher"
-             },
-             {
-               "value": "resourceProvider",
-               "label": "Resource Provider"
-             },
-             {
-               "value": "user",
-               "label": "User"
-             },
-             {
-               "value": "sponsor",
-               "label": "Sponsor"
-             }
-             ,
-             {
-               "value": "coAuthor",
-               "label": "Co Author"
-             }
-             ,
-             {
-               "value": "collaborator",
-               "label": "Collaborator"
-             }
-             ,
-             {
-               "value": "editor",
-               "label": "Editor"
-             }
-             ,
-             {
-               "value": "mediator",
-               "label": "Mediator"
-             }
-             ,
-             {
-               "value": "rightsHolder",
-               "label": "Rights Holder"
-             }
-             ,
-             {
-               "value": "contributor",
-               "label": "Contributor"
-             }
-             ,
-             {
-               "value": "funder",
-               "label": "Funder"
-             }
-             ,
-             {
-               "value": "stakeholder",
-               "label": "Stakeholder"
-             }
+      "field_name": "cited-responsible-party",
+      "label": "Responsible Party",
+      "preset": "composite_repeating",
+      "required": true,
+      "subfields": [{
+          "field_name": "individual-name",
+          "label": "Individual Name",
+          "form_placeholder": "Joe Bloggs",
+          "require_one": true,
+          "hint": "name of individual"
+        },
+        {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "form_placeholder": "0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-name",
+          "label": "Organisation Name / Affiliation",
+          "require_one": true,
+          "form_snippet": "organization.html",
+          "hint": "name of orginization or affiliation if individual name is used"
+        },
+
+        {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "form_placeholder": "0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "form_placeholder": ""
+        },
+
+        {
+          "field_name": "contact-info_online-resource_url",
+          "label": "Contact Info Online Resource URL"
+        },
+        {
+          "field_name": "contact-info_email",
+          "label": "Contact Info Email"
+        },
+        {
+          "field_name": "role",
+          "label": "Role",
+          "preset": "select",
+          "display_snippet": "select.html",
+          "required": true,
+          "choices": [{
+              "value": "author",
+              "label": "Author"
+            },
+            {
+              "value": "custodian",
+              "label": "Custodian"
+            },
+            {
+              "value": "distributor",
+              "label": "Distributor"
+            },
+            {
+              "value": "originator",
+              "label": "Originator"
+            },
+            {
+              "value": "owner",
+              "label": "Owner"
+            },
+            {
+              "value": "pointOfContact",
+              "label": "Point of Contact"
+            },
+            {
+              "value": "principalInvestigator",
+              "label": "Principal Investigator"
+            },
+            {
+              "value": "processor",
+              "label": "Processor"
+            },
+            {
+              "value": "publisher",
+              "label": "Publisher"
+            },
+            {
+              "value": "resourceProvider",
+              "label": "Resource Provider"
+            },
+            {
+              "value": "user",
+              "label": "User"
+            },
+            {
+              "value": "sponsor",
+              "label": "Sponsor"
+            },
+            {
+              "value": "coAuthor",
+              "label": "Co Author"
+            },
+            {
+              "value": "collaborator",
+              "label": "Collaborator"
+            },
+            {
+              "value": "editor",
+              "label": "Editor"
+            },
+            {
+              "value": "mediator",
+              "label": "Mediator"
+            },
+            {
+              "value": "rightsHolder",
+              "label": "Rights Holder"
+            },
+            {
+              "value": "contributor",
+              "label": "Contributor"
+            },
+            {
+              "value": "funder",
+              "label": "Funder"
+            },
+            {
+              "value": "stakeholder",
+              "label": "Stakeholder"
+            }
           ]
         }
-     ]
+      ]
     },
 
     {
@@ -804,14 +866,18 @@
           "field_name": "begin",
           "label": "Begin",
           "preset": "date",
-          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
+          "form_attrs": {
+            "required pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}"
+          },
           "form_placeholder": "yyyy-mm-dd"
         },
         {
           "field_name": "end",
           "label": "End",
           "preset": "date",
-          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
+          "form_attrs": {
+            "required pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}"
+          },
           "form_placeholder": "yyyy-mm-dd"
         }
       ]
@@ -823,13 +889,17 @@
           "field_name": "min",
           "label": "Min",
           "preset": "number",
-          "form_attrs":{"pattern":"[0-9.]+"}
+          "form_attrs": {
+            "pattern": "[0-9.]+"
+          }
         },
         {
           "field_name": "max",
           "label": "Max",
           "preset": "number",
-          "form_attrs":{"pattern":"[0-9.]+"}
+          "form_attrs": {
+            "pattern": "[0-9.]+"
+          }
         }
       ]
     },
@@ -840,8 +910,7 @@
       "label": "Default Locale",
       "preset": "select",
       "display_snippet": "select.html",
-      "choices": [
-        {
+      "choices": [{
           "value": "en",
           "label": "English"
         },
@@ -849,62 +918,60 @@
           "value": "fr",
           "label": "French"
         }
-     ]
+      ]
     },
 
     {
-       "field_name": "unique-resource-identifier-full",
-       "label": "Citation identifier",
-       "help_text": "example: http://doi.org/12345.67890#1",
-       "preset": "composite",
-       "subfields": [
-         {
-           "field_name": "authority",
-           "label": "Authority",
-           "form_placeholder": "doi.org"
-         },
-         {
-           "field_name": "code-space",
-           "label": "Code Space",
-           "form_placeholder": "12345"
-         },
-         {
-           "field_name": "code",
-           "label": "Code",
-           "form_placeholder": "67890"
-         },
-         {
-           "field_name": "version",
-           "label": "Version",
-           "form_placeholder": "1"
-         }
-       ]
-     },
-     {
-       "field_name": "xml_location_url",
-       "label": "XML Metadata File Location",
-       "form_placeholder":"http://waf/location/xml_metadata_file.xml",
-       "display_property":"foaf:homepage",
-       "display_snippet":"link.html",
-       "required": true,
-       "display_snippet": null
-     },
-     {
-       "field_name": "owner_org",
-       "label": "Organization",
-       "preset": "dataset_organization",
-       "display_snippet": null
-     },
-     {
-       "field_name": "version",
-       "label": "Version",
-       "validators": "ignore_missing unicode package_version_validator",
-       "form_placeholder": "1.0"
-     }
+      "field_name": "unique-resource-identifier-full",
+      "label": "Citation identifier",
+      "help_text": "example: http://doi.org/12345.67890#1",
+      "preset": "composite",
+      "subfields": [{
+          "field_name": "authority",
+          "label": "Authority",
+          "form_placeholder": "doi.org"
+        },
+        {
+          "field_name": "code-space",
+          "label": "Code Space",
+          "form_placeholder": "12345"
+        },
+        {
+          "field_name": "code",
+          "label": "Code",
+          "form_placeholder": "67890"
+        },
+        {
+          "field_name": "version",
+          "label": "Version",
+          "form_placeholder": "1"
+        }
+      ]
+    },
+    {
+      "field_name": "xml_location_url",
+      "label": "XML Metadata File Location",
+      "form_placeholder": "http://waf/location/xml_metadata_file.xml",
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html",
+      "required": true,
+      "display_snippet": null
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization",
+      "display_snippet": null
+    },
+    {
+      "field_name": "version",
+      "label": "Version",
+      "validators": "ignore_missing unicode package_version_validator",
+      "form_placeholder": "1.0"
+    }
 
   ],
-  "resource_fields": [
-    {
+  "resource_fields": [{
       "field_name": "url",
       "label": "URL",
       "preset": "resource_url_upload"

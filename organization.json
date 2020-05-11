@@ -25,6 +25,33 @@
       "form_placeholder": "my-organization"
     },
     {
+       "field_name": "organization-uri",
+       "label": "Organization identifier",
+       "preset": "composite",
+       "subfields": [
+         {
+           "field_name": "authority",
+           "label": "Authority",
+           "form_placeholder": "doi.org"
+         },
+         {
+           "field_name": "code-space",
+           "label": "Code Space",
+           "form_placeholder": "12345"
+         },
+         {
+           "field_name": "code",
+           "label": "Code",
+           "form_placeholder": "67890"
+         },
+         {
+           "field_name": "version",
+           "label": "Version",
+           "form_placeholder": "1"
+         }
+       ]
+     },
+    {
       "field_name": "description_translated",
       "preset": "fluent_markdown",
       "label": "Description",
