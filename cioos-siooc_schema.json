@@ -3,7 +3,7 @@
   "dataset_type": "dataset",
   "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
-  "form_languages": ["en", "fr"],
+  "form_languages": ["en"],
   "dataset_fields": [
     {
       "field_name": "title_translated",
@@ -524,7 +524,7 @@
     {
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
-     "preset": "composite",
+     "preset": "composite_repeating",
      "required": true,
      "subfields":[
          {
@@ -886,7 +886,7 @@
        "form_placeholder":"http://waf/location/xml_metadata_file.xml",
        "display_property":"foaf:homepage",
        "display_snippet":"link.html",
-       "required": true,
+       "required": false,
        "display_snippet": null
      },
      {
