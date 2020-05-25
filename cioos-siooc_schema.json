@@ -180,6 +180,48 @@
           "icon": "currents.svg"
         },
         {
+          "category": "Biogeochemical",
+          "value": "particulateMatter",
+          "label": "Particulate Matter",
+          "icon": "particulate-matter.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "phytoplankton",
+          "label": "Phytoplankton biomass and diversity",
+          "icon": "phytoplankton.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "phytoplankton",
+          "label": "Phytoplankton biomass and diversity",
+          "icon": "phytoplankton.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "zooplankton",
+          "label": "Zooplankton biomass and diversity",
+          "icon": "zooplankton.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "fish",
+          "label": "Fish abundance and distribution",
+          "icon": "fish.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "microbe",
+          "label": "Microbe biomass and diversity",
+          "icon": "microbes.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "turtlesBirdsMammals",
+          "label": "Marine turtles, birds, mammals abundance and distribution",
+          "icon": "birds-mammals.svg"
+        },        
+        {
           "category": null,
           "value": "other",
           "label": "Other",
