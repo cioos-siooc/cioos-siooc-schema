@@ -54,6 +54,18 @@
       }
     },
     {
+      "field_name": "mapp-theme",
+      "display_snippet": null,
+      "required": false,
+      "label": "Theme"
+    },
+    {
+      "field_name": "mapp-sub-theme",
+      "display_snippet": null,
+      "required": false,
+      "label": "Sub Theme"
+    },
+    {
       "field_name": "eov",
       "label": "Ocean Variables",
       "preset": "multiple_select",
