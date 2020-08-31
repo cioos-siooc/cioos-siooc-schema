@@ -193,12 +193,6 @@
         },
         {
           "category": "BioEcosystems",
-          "value": "phytoplankton",
-          "label": "Phytoplankton biomass and diversity",
-          "icon": "phytoplankton.svg"
-        },
-        {
-          "category": "BioEcosystems",
           "value": "zooplankton",
           "label": "Zooplankton biomass and diversity",
           "icon": "zooplankton.svg"
@@ -220,7 +214,7 @@
           "value": "turtlesBirdsMammals",
           "label": "Marine turtles, birds, mammals abundance and distribution",
           "icon": "birds-mammals.svg"
-        },        
+        },
         {
           "category": null,
           "value": "other",
