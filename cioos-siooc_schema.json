@@ -55,13 +55,13 @@
     },
     {
       "field_name": "mapp-theme",
-      "display_snippet": null,
+      "preset": "tag_string_autocomplete",
       "required": false,
       "label": "Theme"
     },
     {
       "field_name": "mapp-sub-theme",
-      "display_snippet": null,
+      "preset": "tag_string_autocomplete",
       "required": false,
       "label": "Sub Theme"
     },
