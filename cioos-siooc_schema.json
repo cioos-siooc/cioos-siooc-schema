@@ -180,10 +180,10 @@
           "icon": "currents.svg"
         },
         {
-          "category": null,
+          "category": "Other",
           "value": "other",
           "label": "Other",
-          "icon": null
+          "icon": "none.svg"
         }
       ]
     },
