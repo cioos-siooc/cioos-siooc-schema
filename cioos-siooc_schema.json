@@ -536,12 +536,13 @@
            "field_name": "individual-name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
-           "required": true,
+           "require_one": true,
            "hint": "name of orginization or individual"
          },
          {
            "field_name": "organisation-name",
            "label": "Affiliation",
+           "require_one": true,
            "preset": "dataset_organization"
          },
          {
