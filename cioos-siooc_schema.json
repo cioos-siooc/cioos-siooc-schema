@@ -192,10 +192,10 @@
           "icon": "currents.svg"
         },
         {
-          "category": null,
+          "category": "Other",
           "value": "other",
           "label": "Other",
-          "icon": null
+          "icon": "none.svg"
         }
       ]
     },
@@ -536,19 +536,20 @@
     {
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
-     "preset": "composite",
+     "preset": "composite_repeating",
      "required": true,
      "subfields":[
          {
            "field_name": "individual-name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
-           "required": true,
+           "require_one": true,
            "hint": "name of orginization or individual"
          },
          {
            "field_name": "organisation-name",
            "label": "Affiliation",
+           "require_one": true,
            "preset": "dataset_organization"
          },
          {
