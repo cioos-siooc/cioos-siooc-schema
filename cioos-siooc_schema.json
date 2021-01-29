@@ -44,6 +44,7 @@
       "preset": "fluent_tags",
       "display_snippet": null,
       "required": true,
+      "tag_validators": "tag_length_validator cioos_tag_name_validator",
       "label": {
         "fr": "Mots-clés",
         "en": "Keywords"
@@ -180,10 +181,10 @@
           "icon": "currents.svg"
         },
         {
-          "category": null,
+          "category": "Other",
           "value": "other",
           "label": "Other",
-          "icon": null
+          "icon": "none.svg"
         }
       ]
     },
