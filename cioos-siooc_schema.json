@@ -204,107 +204,107 @@
       "choices": [
         {
           "value": "attribute",
-          "label": "attribute"
+          "label": "Attribute"
         },
         {
           "value": "attributeType",
-          "label": "attributeType"
+          "label": "Attribute Type"
         },
         {
           "value": "collectionHardware",
-          "label": "collectionHardware"
+          "label": "Collection Hardware"
         },
         {
           "value": "collectionSession",
-          "label": "collectionSession"
+          "label": "Collection Session"
         },
         {
           "value": "dataset",
-          "label": "dataset"
+          "label": "Dataset"
         },
         {
           "value": "series",
-          "label": "series"
+          "label": "Series"
         },
         {
           "value": "nonGeographicDataset",
-          "label": "nonGeographicDataset"
+          "label": "Non Geographic Dataset"
         },
         {
           "value": "dimensionGroup",
-          "label": "dimensionGroup"
+          "label": "Dimension Group"
         },
         {
           "value": "feature",
-          "label": "feature"
+          "label": "Feature"
         },
         {
           "value": "featureType",
-          "label": "featureType"
+          "label": "Feature Type"
         },
         {
           "value": "propertyType",
-          "label": "propertyType"
+          "label": "Property Type"
         },
         {
           "value": "fieldSession",
-          "label": "fieldSession"
+          "label": "Field Session"
         },
         {
           "value": "software",
-          "label": "software"
+          "label": "Software"
         },
         {
           "value": "service",
-          "label": "service"
+          "label": "Service"
         },
         {
           "value": "model",
-          "label": "model"
+          "label": "Model"
         },
         {
           "value": "tile",
-          "label": "tile"
+          "label": "Tile"
         },
         {
           "value": "metadata",
-          "label": "metadata"
+          "label": "Metadata"
         },
         {
           "value": "initiative",
-          "label": "initiative"
+          "label": "Initiative"
         },
         {
           "value": "sample",
-          "label": "sample"
+          "label": "Sample"
         },
         {
           "value": "document",
-          "label": "document"
+          "label": "Document"
         },
         {
           "value": "repository",
-          "label": "repository"
+          "label": "Repository"
         },
         {
           "value": "aggregate",
-          "label": "aggregate"
+          "label": "Aggregate"
         },
         {
           "value": "product",
-          "label": "product"
+          "label": "Product"
         },
         {
           "value": "collection",
-          "label": "collection"
+          "label": "Collection"
         },
         {
           "value": "coverage",
-          "label": "coverage"
+          "label": "Coverage"
         },
         {
           "value": "application",
-          "label": "application"
+          "label": "Application"
         }
       ]
     },
@@ -317,7 +317,7 @@
       "choices": [
         {
           "value": "completed",
-          "label": "completed"
+          "label": "Completed"
         }, {
           "value": "historicalArchive",
           "label": "Historical Archive"
@@ -377,6 +377,7 @@
       "field_name": "dataset-reference-date",
       "label": "Dates",
       "preset": "composite_repeating",
+      "display_snippet": null,
       "form_blanks": 1,
       "subfields": [{
           "field_name": "value",
@@ -779,7 +780,7 @@
 
     {
       "field_name": "spatial",
-      "label": "Spatial",
+      "label": "Spatial Extent",
       "form_snippet": "spatial.html"
     }, {
       "field_name": "bbox-north-lat",
