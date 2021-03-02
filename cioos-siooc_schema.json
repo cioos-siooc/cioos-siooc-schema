@@ -852,7 +852,8 @@
           "value": "fr",
           "label": "French"
         }
-     ]
+     ],
+     "help_text": "Default language used in this datasets metadata"
     },
 
     {
@@ -890,7 +891,12 @@
        "display_property":"foaf:homepage",
        "display_snippet":"link.html",
        "required": true,
-       "display_snippet": null
+       "display_snippet": null,
+       "help_text": "(Recomended) URL for the external xml metadata file which
+          represents the full cioos metadata reocrd. This is often the same file
+          used to create this record if the dataset is generated using the
+          spatial harvester. If using the api to create datasets this field will
+          not be set automaticly."
      },
      {
        "field_name": "owner_org",
@@ -903,7 +909,17 @@
        "label": "Version",
        "validators": "ignore_missing unicode package_version_validator",
        "form_placeholder": "1.0"
+     },{
+       "field_name": "spatial_initial_max_zoom",
+       "label": "Initial dataset map max zoom level",
+       "preset": "number",
+       "display_snippet": null,
+       "form_attrs":{"pattern":"[0-9]+"},
+       "form_placeholder": "9",
+       "help_text": "(Optional) Sets the initial maxamum zoom level in the
+          spatial map when viewing this dataset"
      }
+
 
   ],
   "resource_fields": [
