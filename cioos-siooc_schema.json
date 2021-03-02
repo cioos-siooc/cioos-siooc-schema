@@ -908,9 +908,8 @@
      },{
        "field_name": "spatial_initial_max_zoom",
        "label": "Initial dataset map max zoom level",
-       "preset": "number",
        "display_snippet": null,
-       "form_attrs":{"pattern":"[0-9]+"},
+       "validators": "ignore_missing int_validator",
        "form_placeholder": "9",
        "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
      }
