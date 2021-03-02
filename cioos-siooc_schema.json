@@ -893,6 +893,11 @@
        "display_snippet": null
      },
      {
+       "field_name": "harvest_document_content",
+       "label": "External Harvest Document Content",
+       "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
+     },
+     {
        "field_name": "owner_org",
        "label": "Organization",
        "preset": "dataset_organization",
