@@ -189,6 +189,11 @@
       ]
     },
     {
+      "field_name": "citation",
+      "preset": "fluent_markdown",
+      "label": "Citation"
+    },
+    {
       "field_name": "license_id",
       "label": "License",
       "display_snippet": null,
