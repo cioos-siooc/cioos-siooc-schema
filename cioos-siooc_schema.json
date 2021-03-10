@@ -900,6 +900,11 @@
        "help_text": "(Recomended) URL for the external xml metadata file which represents the full cioos metadata reocrd. This is often the same file used to create this record if the dataset is generated using the spatial harvester. If using the api to create datasets this field will not be set automaticly."
      },
      {
+       "field_name": "harvest_document_content",
+       "label": "External Harvest Document Content",
+       "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
+     },
+     {
        "field_name": "owner_org",
        "label": "Organization",
        "preset": "dataset_organization",
