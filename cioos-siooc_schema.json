@@ -191,6 +191,7 @@
     {
       "field_name": "citation",
       "preset": "fluent_markdown",
+      "display_snippet": null,
       "label": "Citation"
     },
     {
@@ -902,6 +903,7 @@
      {
        "field_name": "harvest_document_content",
        "label": "External Harvest Document Content",
+       "display_snippet": null,
        "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
      },
      {
