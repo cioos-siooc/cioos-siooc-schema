@@ -66,6 +66,18 @@
       "label": "Sub Theme"
     },
     {
+      "field_name": "mapp-sub-region",
+      "preset": "tag_string_autocomplete",
+      "required": false,
+      "label": "Sub Region"
+    },
+    {
+      "field_name": "mapp-project",
+      "preset": "tag_string_autocomplete",
+      "required": false,
+      "label": "Project"
+    },
+    {
       "field_name": "eov",
       "label": "Ocean Variables",
       "preset": "multiple_select",
@@ -828,7 +840,7 @@
           "form_placeholder": "yyyy-mm-dd"
         }
       ]
-    }, 
+    },
     {
       "field_name": "metadata-language",
       "label": "Default Locale",
