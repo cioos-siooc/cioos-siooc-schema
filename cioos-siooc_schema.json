@@ -25,7 +25,7 @@
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
-      "help_text": "unique id for the dataset (GUID or Title)"
+      "help_text": "unique id for the dataset (GUID or Title)",
       "form_attrs": {"data-module": "slug-preview-slug"},
       "form_placeholder": "eg. my-dataset"
     },
