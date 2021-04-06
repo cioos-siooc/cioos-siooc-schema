@@ -25,6 +25,7 @@
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
+      "help_text": "unique id for the dataset (GUID or Title)"
       "form_attrs": {"data-module": "slug-preview-slug"},
       "form_placeholder": "eg. my-dataset"
     },
@@ -192,7 +193,8 @@
       "field_name": "citation",
       "preset": "fluent_markdown",
       "display_snippet": null,
-      "label": "Citation"
+      "label": "Citation",
+      "help_text": "Citation information in json format or DOI URL. See https://citation.js.org/demo/ for acceptable inputs"
     },
     {
       "field_name": "license_id",
@@ -378,12 +380,98 @@
         }
       ]
     },
-
     {
-      "field_name": "dataset-reference-date",
-      "label": "Dates",
+      "field_name": "metadata-reference-date",
+      "label": "Metadata Dates",
       "preset": "composite_repeating",
       "display_snippet": null,
+      "help_text": "Dates related to the metadata record",
+      "form_blanks": 1,
+      "subfields": [{
+          "field_name": "value",
+          "label": "Date",
+          "preset": "date",
+          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
+          "form_placeholder": "yyyy-mm-dd"
+        },
+        {
+          "field_name": "type",
+          "label": "Type",
+          "choices": [
+            {
+              "value": "creation",
+              "label": "Creation"
+            },
+            {
+              "value": "publication",
+              "label": "Publication"
+            },
+            {
+              "value": "revision",
+              "label": "Revision"
+            },
+            {
+              "value": "expiry",
+              "label": "Expiry"
+            },
+            {
+              "value": "lastUpdate",
+              "label": "Last Update"
+            },
+            {
+              "value": "lastRevision",
+              "label": "Last Revision"
+            },
+            {
+              "value": "nextUpdate",
+              "label": "Next Update"
+            },
+            {
+              "value": "unavailable",
+              "label": "Unavailable"
+            },
+            {
+              "value": "inForce",
+              "label": "In Force"
+            },
+            {
+              "value": "adopted",
+              "label": "Adopted"
+            },
+            {
+              "value": "deprecated",
+              "label": "Deprecated"
+            },
+            {
+              "value": "superseded",
+              "label": "Superseded"
+            },
+            {
+              "value": "validityBegins",
+              "label": "Validity Begins"
+            },
+            {
+              "value": "validityExpires",
+              "label": "Validity Expires"
+            },
+            {
+              "value": "released",
+              "label": "Released"
+            },
+            {
+              "value": "distribution",
+              "label": "Distribution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field_name": "dataset-reference-date",
+      "label": "Resource Dates",
+      "preset": "composite_repeating",
+      "display_snippet": null,
+      "help_text": "Dates related to the dataset resource",
       "form_blanks": 1,
       "subfields": [{
           "field_name": "value",
@@ -533,6 +621,7 @@
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
      "preset": "composite_repeating",
+     "help_text": "Individual or Organization who is the primary contact for this dataset",
      "required": true,
      "subfields":[
          {
@@ -660,6 +749,7 @@
      "field_name": "cited-responsible-party",
      "label": "Responsible Party",
      "preset": "composite_repeating",
+     "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
      "required": true,
      "subfields":[
          {
@@ -865,7 +955,7 @@
     {
        "field_name": "unique-resource-identifier-full",
        "label": "Citation identifier",
-       "help_text": "example: http://doi.org/12345.67890#1",
+       "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
        "preset": "composite",
        "subfields": [
          {
