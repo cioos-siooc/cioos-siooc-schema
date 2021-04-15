@@ -898,9 +898,7 @@
     {
       "field_name": "temporal-extent",
       "label": "Temporal Extent",
-      "form_snippet": "composite.html",
-      "display_snippet": "composite.html",
-      "validators": "composite_group2json cioos_is_valid_range",
+      "preset": "composite",
       "subfields": [{
           "field_name": "begin",
           "label": "Begin",
