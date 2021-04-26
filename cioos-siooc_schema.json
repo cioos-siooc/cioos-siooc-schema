@@ -25,6 +25,7 @@
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
+      "help_text": "unique id for the dataset (GUID or Title)",
       "form_attrs": {"data-module": "slug-preview-slug"},
       "form_placeholder": "eg. my-dataset"
     },
@@ -44,6 +45,7 @@
       "preset": "fluent_tags",
       "display_snippet": null,
       "required": true,
+      "tag_validators": "tag_length_validator cioos_tag_name_validator",
       "label": {
         "fr": "Mots-clés",
         "en": "Keywords"
@@ -219,9 +221,16 @@
           "category": null,
           "value": "other",
           "label": "Other",
-          "icon": null
+          "icon": "eov_other.svg"
         }
       ]
+    },
+    {
+      "field_name": "citation",
+      "preset": "fluent_markdown",
+      "display_snippet": null,
+      "label": "Citation",
+      "help_text": "Citation information in json format or DOI URL. See https://citation.js.org/demo/ for acceptable inputs"
     },
     {
       "field_name": "license_id",
@@ -239,107 +248,107 @@
       "choices": [
         {
           "value": "attribute",
-          "label": "attribute"
+          "label": "Attribute"
         },
         {
           "value": "attributeType",
-          "label": "attributeType"
+          "label": "Attribute Type"
         },
         {
           "value": "collectionHardware",
-          "label": "collectionHardware"
+          "label": "Collection Hardware"
         },
         {
           "value": "collectionSession",
-          "label": "collectionSession"
+          "label": "Collection Session"
         },
         {
           "value": "dataset",
-          "label": "dataset"
+          "label": "Dataset"
         },
         {
           "value": "series",
-          "label": "series"
+          "label": "Series"
         },
         {
           "value": "nonGeographicDataset",
-          "label": "nonGeographicDataset"
+          "label": "Non Geographic Dataset"
         },
         {
           "value": "dimensionGroup",
-          "label": "dimensionGroup"
+          "label": "Dimension Group"
         },
         {
           "value": "feature",
-          "label": "feature"
+          "label": "Feature"
         },
         {
           "value": "featureType",
-          "label": "featureType"
+          "label": "Feature Type"
         },
         {
           "value": "propertyType",
-          "label": "propertyType"
+          "label": "Property Type"
         },
         {
           "value": "fieldSession",
-          "label": "fieldSession"
+          "label": "Field Session"
         },
         {
           "value": "software",
-          "label": "software"
+          "label": "Software"
         },
         {
           "value": "service",
-          "label": "service"
+          "label": "Service"
         },
         {
           "value": "model",
-          "label": "model"
+          "label": "Model"
         },
         {
           "value": "tile",
-          "label": "tile"
+          "label": "Tile"
         },
         {
           "value": "metadata",
-          "label": "metadata"
+          "label": "Metadata"
         },
         {
           "value": "initiative",
-          "label": "initiative"
+          "label": "Initiative"
         },
         {
           "value": "sample",
-          "label": "sample"
+          "label": "Sample"
         },
         {
           "value": "document",
-          "label": "document"
+          "label": "Document"
         },
         {
           "value": "repository",
-          "label": "repository"
+          "label": "Repository"
         },
         {
           "value": "aggregate",
-          "label": "aggregate"
+          "label": "Aggregate"
         },
         {
           "value": "product",
-          "label": "product"
+          "label": "Product"
         },
         {
           "value": "collection",
-          "label": "collection"
+          "label": "Collection"
         },
         {
           "value": "coverage",
-          "label": "coverage"
+          "label": "Coverage"
         },
         {
           "value": "application",
-          "label": "application"
+          "label": "Application"
         }
       ]
     },
@@ -352,7 +361,7 @@
       "choices": [
         {
           "value": "completed",
-          "label": "completed"
+          "label": "Completed"
         }, {
           "value": "historicalArchive",
           "label": "Historical Archive"
@@ -407,11 +416,98 @@
         }
       ]
     },
-
+    {
+      "field_name": "metadata-reference-date",
+      "label": "Metadata Dates",
+      "preset": "composite_repeating",
+      "display_snippet": null,
+      "help_text": "Dates related to the metadata record",
+      "form_blanks": 1,
+      "subfields": [{
+          "field_name": "value",
+          "label": "Date",
+          "preset": "date",
+          "form_attrs":{"required pattern":"[0-9]{4}-[0-9]{2}-[0-9]{2}"},
+          "form_placeholder": "yyyy-mm-dd"
+        },
+        {
+          "field_name": "type",
+          "label": "Type",
+          "choices": [
+            {
+              "value": "creation",
+              "label": "Creation"
+            },
+            {
+              "value": "publication",
+              "label": "Publication"
+            },
+            {
+              "value": "revision",
+              "label": "Revision"
+            },
+            {
+              "value": "expiry",
+              "label": "Expiry"
+            },
+            {
+              "value": "lastUpdate",
+              "label": "Last Update"
+            },
+            {
+              "value": "lastRevision",
+              "label": "Last Revision"
+            },
+            {
+              "value": "nextUpdate",
+              "label": "Next Update"
+            },
+            {
+              "value": "unavailable",
+              "label": "Unavailable"
+            },
+            {
+              "value": "inForce",
+              "label": "In Force"
+            },
+            {
+              "value": "adopted",
+              "label": "Adopted"
+            },
+            {
+              "value": "deprecated",
+              "label": "Deprecated"
+            },
+            {
+              "value": "superseded",
+              "label": "Superseded"
+            },
+            {
+              "value": "validityBegins",
+              "label": "Validity Begins"
+            },
+            {
+              "value": "validityExpires",
+              "label": "Validity Expires"
+            },
+            {
+              "value": "released",
+              "label": "Released"
+            },
+            {
+              "value": "distribution",
+              "label": "Distribution"
+            }
+          ]
+        }
+      ]
+    },
     {
       "field_name": "dataset-reference-date",
-      "label": "Dates",
+      "label": "Resource Dates",
       "preset": "composite_repeating",
+      "display_snippet": null,
+      "help_text": "Dates related to the dataset resource",
       "form_blanks": 1,
       "subfields": [{
           "field_name": "value",
@@ -561,18 +657,20 @@
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
      "preset": "composite_repeating",
+     "help_text": "Individual or Organization who is the primary contact for this dataset",
      "required": true,
      "subfields":[
          {
            "field_name": "individual-name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
-           "required": true,
+           "require_one": true,
            "hint": "name of orginization or individual"
          },
          {
            "field_name": "organisation-name",
            "label": "Affiliation",
+           "require_one": true,
            "preset": "dataset_organization"
          },
          {
@@ -687,6 +785,7 @@
      "field_name": "cited-responsible-party",
      "label": "Responsible Party",
      "preset": "composite_repeating",
+     "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
      "required": true,
      "subfields":[
          {
@@ -813,7 +912,7 @@
 
     {
       "field_name": "spatial",
-      "label": "Spatial",
+      "label": "Spatial Extent",
       "form_snippet": "spatial.html"
     }, {
       "field_name": "bbox-north-lat",
@@ -885,13 +984,14 @@
           "value": "fr",
           "label": "French"
         }
-     ]
+     ],
+     "help_text": "Default language used in this datasets metadata"
     },
 
     {
        "field_name": "unique-resource-identifier-full",
        "label": "Citation identifier",
-       "help_text": "example: http://doi.org/12345.67890#1",
+       "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
        "preset": "composite",
        "subfields": [
          {
@@ -926,6 +1026,12 @@
        "display_snippet": null
      },
      {
+       "field_name": "harvest_document_content",
+       "label": "External Harvest Document Content",
+       "display_snippet": null,
+       "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
+     },
+     {
        "field_name": "owner_org",
        "label": "Organization",
        "preset": "dataset_organization",
@@ -936,7 +1042,15 @@
        "label": "Version",
        "validators": "ignore_missing unicode package_version_validator",
        "form_placeholder": "1.0"
+     },{
+       "field_name": "spatial_initial_max_zoom",
+       "label": "Initial dataset map max zoom level",
+       "display_snippet": null,
+       "validators": "ignore_missing int_validator",
+       "form_placeholder": "9",
+       "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
      }
+
 
   ],
   "resource_fields": [
