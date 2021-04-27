@@ -659,6 +659,7 @@
      "preset": "composite_repeating",
      "help_text": "Individual or Organization who is the primary contact for this dataset",
      "required": true,
+     "form_blanks": 1,
      "subfields":[
          {
            "field_name": "individual-name",
@@ -787,6 +788,7 @@
      "preset": "composite_repeating",
      "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
      "required": true,
+     "form_blanks": 1,
      "subfields":[
          {
            "field_name": "individual-name",
