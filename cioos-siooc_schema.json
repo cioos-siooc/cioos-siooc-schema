@@ -381,6 +381,125 @@
       ]
     },
     {
+      "field_name": "aggregation-info",
+      "label": "Associated Datasets",
+      "preset": "composite_repeating",
+      "form_blanks": 1,
+      "help_text": "https://wiki.esipfed.org/MD_AssociatedResource",
+      "subfields": [
+        {
+          "field_name": "aggregate-dataset-identifier",
+          "label": "Parent or Linked Dataset",
+          "help_text": "Enter a dataset name or title",
+          "form_attrs": {
+            "data-module": "autocomplete",
+            "data-module-items": 5,
+            "data-module-interval": 500,
+            "data-module-source": "/api/3/action/package_autocomplete?q=?",
+            "data-module-key": "name",
+            "data-module-label": "title",
+            "data-module-class": "",
+            "class": ""
+          }
+        },
+        {
+          "field_name": "initiative-type",
+          "label": "Initiative Type",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_InitiativeTypeCode",
+          "preset": "select",
+          "choices": [{
+            "value": "campaign",
+            "label": "campaign"
+          }, {
+            "value": "collection",
+            "label": "collection"
+          }, {
+            "value": "exercise",
+            "label": "exercise"
+          }, {
+            "value": "experiment",
+            "label": "experiment"
+          }, {
+            "value": "investigation",
+            "label": "investigation"
+          }, {
+            "value": "mission",
+            "label": "mission"
+          }, {
+            "value": "operation",
+            "label": "operation"
+          }, {
+            "value": "platform",
+            "label": "platform"
+          }, {
+            "value": "process",
+            "label": "process"
+          }, {
+            "value": "program",
+            "label": "program"
+          }, {
+            "value": "project",
+            "label": "project"
+          }, {
+            "value": "sensor",
+            "label": "sensor"
+          }, {
+            "value": "study",
+            "label": "study"
+          }, {
+            "value": "task",
+            "label": "task"
+          }, {
+            "value": "trial",
+            "label": "trial"
+          }]
+        },
+        {
+          "field_name": "association-type",
+          "label": "Association Type",
+          "preset": "select",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_AssociationTypeCode",
+          "choices": [{
+              "value": "collectiveTitle",
+              "label": "collectiveTitle"
+            },
+            {
+              "value": "crossReference",
+              "label": "crossReference"
+            },
+            {
+              "value": "dependency",
+              "label": "dependency"
+            },
+            {
+              "value": "isComposedOf",
+              "label": "isComposedOf"
+            },
+            {
+              "value": "largerWorkCitation",
+              "label": "largerWorkCitation"
+            },
+            {
+              "value": "partOfSeamlessDatabase",
+              "label": "partOfSeamlessDatabase"
+            },
+            {
+              "value": "revisionOf",
+              "label": "revisionOf"
+            },
+            {
+              "value": "series",
+              "label": "series"
+            },
+            {
+              "value": "stereoMate",
+              "label": "stereoMate"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "field_name": "metadata-reference-date",
       "label": "Metadata Dates",
       "preset": "composite_repeating",
