@@ -1,5 +1,5 @@
 {
-  "scheming_version": 1,
+  "scheming_version": 2,
   "dataset_type": "dataset",
   "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
@@ -381,13 +381,132 @@
       ]
     },
     {
+      "field_name": "aggregation-info",
+      "label": "Associated Datasets",
+      "form_blanks": 1,
+      "help_text": "https://wiki.esipfed.org/MD_AssociatedResource",
+      "repeating_label": "Associated Dataset",
+      "repeating_subfields": [
+        {
+          "field_name": "aggregate-dataset-identifier",
+          "label": "Parent or Linked Dataset",
+          "help_text": "Enter a dataset name or title",
+          "form_attrs": {
+            "data-module": "autocomplete",
+            "data-module-items": 5,
+            "data-module-interval": 500,
+            "data-module-source": "/api/3/action/package_autocomplete?q=?",
+            "data-module-key": "name",
+            "data-module-label": "title",
+            "data-module-class": "",
+            "class": ""
+          }
+        },
+        {
+          "field_name": "initiative-type",
+          "label": "Initiative Type",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_InitiativeTypeCode",
+          "preset": "select",
+          "choices": [{
+            "value": "campaign",
+            "label": "campaign"
+          }, {
+            "value": "collection",
+            "label": "collection"
+          }, {
+            "value": "exercise",
+            "label": "exercise"
+          }, {
+            "value": "experiment",
+            "label": "experiment"
+          }, {
+            "value": "investigation",
+            "label": "investigation"
+          }, {
+            "value": "mission",
+            "label": "mission"
+          }, {
+            "value": "operation",
+            "label": "operation"
+          }, {
+            "value": "platform",
+            "label": "platform"
+          }, {
+            "value": "process",
+            "label": "process"
+          }, {
+            "value": "program",
+            "label": "program"
+          }, {
+            "value": "project",
+            "label": "project"
+          }, {
+            "value": "sensor",
+            "label": "sensor"
+          }, {
+            "value": "study",
+            "label": "study"
+          }, {
+            "value": "task",
+            "label": "task"
+          }, {
+            "value": "trial",
+            "label": "trial"
+          }]
+        },
+        {
+          "field_name": "association-type",
+          "label": "Association Type",
+          "preset": "select",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_AssociationTypeCode",
+          "choices": [{
+              "value": "collectiveTitle",
+              "label": "collectiveTitle"
+            },
+            {
+              "value": "crossReference",
+              "label": "crossReference"
+            },
+            {
+              "value": "dependency",
+              "label": "dependency"
+            },
+            {
+              "value": "isComposedOf",
+              "label": "isComposedOf"
+            },
+            {
+              "value": "largerWorkCitation",
+              "label": "largerWorkCitation"
+            },
+            {
+              "value": "partOfSeamlessDatabase",
+              "label": "partOfSeamlessDatabase"
+            },
+            {
+              "value": "revisionOf",
+              "label": "revisionOf"
+            },
+            {
+              "value": "series",
+              "label": "series"
+            },
+            {
+              "value": "stereoMate",
+              "label": "stereoMate"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "field_name": "metadata-reference-date",
       "label": "Metadata Dates",
-      "preset": "composite_repeating",
       "display_snippet": null,
       "help_text": "Dates related to the metadata record",
       "form_blanks": 1,
-      "subfields": [{
+      "repeating_label": "Metadata Date",
+      "repeating_subfields": [{
           "field_name": "value",
           "label": "Date",
           "preset": "date",
@@ -469,11 +588,11 @@
     {
       "field_name": "dataset-reference-date",
       "label": "Resource Dates",
-      "preset": "composite_repeating",
       "display_snippet": null,
       "help_text": "Dates related to the dataset resource",
       "form_blanks": 1,
-      "subfields": [{
+      "repeating_label": "Resource Date",
+      "repeating_subfields": [{
           "field_name": "value",
           "label": "Date",
           "preset": "date",
@@ -620,11 +739,11 @@
     {
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
-     "preset": "composite_repeating",
      "help_text": "Individual or Organization who is the primary contact for this dataset",
      "required": true,
      "form_blanks": 1,
-     "subfields":[
+     "repeating_label": "Contact",
+     "repeating_subfields":[
          {
            "field_name": "individual-name",
            "label": "Name",
@@ -749,11 +868,11 @@
     {
      "field_name": "cited-responsible-party",
      "label": "Responsible Party",
-     "preset": "composite_repeating",
      "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
      "required": true,
      "form_blanks": 1,
-     "subfields":[
+     "repeating_label": "Party",
+     "repeating_subfields":[
          {
            "field_name": "individual-name",
            "label": "Individual Name",
@@ -900,8 +1019,7 @@
     {
       "field_name": "temporal-extent",
       "label": "Temporal Extent",
-      "preset": "composite",
-      "subfields": [{
+      "simple_subfields": [{
           "field_name": "begin",
           "label": "Begin",
           "preset": "date",
@@ -919,17 +1037,14 @@
     }, {
       "field_name": "vertical-extent",
       "label": "Vertical Extent",
-      "preset": "composite",
-      "subfields": [{
+      "simple_subfields": [{
           "field_name": "min",
           "label": "Min",
-          "preset": "number",
           "form_attrs":{"pattern":"[0-9.]+"}
         },
         {
           "field_name": "max",
           "label": "Max",
-          "preset": "number",
           "form_attrs":{"pattern":"[0-9.]+"}
         }
       ]
@@ -958,8 +1073,7 @@
        "field_name": "unique-resource-identifier-full",
        "label": "Citation identifier",
        "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
-       "preset": "composite",
-       "subfields": [
+       "simple_subfields": [
          {
            "field_name": "authority",
            "label": "Authority",
