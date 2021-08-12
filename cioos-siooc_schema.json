@@ -742,7 +742,6 @@
      "help_text": "Individual or Organization who is the primary contact for this dataset",
      "required": true,
      "form_blanks": 1,
-     "repeating_label": "Contact",
      "repeating_subfields":[
          {
            "field_name": "individual-name",
@@ -759,11 +758,11 @@
          },
          {
            "field_name": "contact-info_online-resource",
-           "label": "Contact Info Online Resource"
+           "label": "Resource"
          },
          {
            "field_name": "contact-info_email",
-           "label": "Contact Info Email"
+           "label": "Email"
          },
          {
            "field_name": "role",
@@ -871,7 +870,6 @@
      "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
      "required": true,
      "form_blanks": 1,
-     "repeating_label": "Party",
      "repeating_subfields":[
          {
            "field_name": "individual-name",
@@ -882,18 +880,18 @@
          },
          {
            "field_name": "organisation-name",
-           "label": "Organisation Name / Affiliation",
+           "label": "Affiliation",
            "require_one": true,
            "form_snippet": "organization.html",
            "hint": "name of orginization or affiliation if individual name is used"
          },
          {
            "field_name": "contact-info_online-resource",
-           "label": "Contact Info Online Resource"
+           "label": "Resource"
          },
          {
            "field_name": "contact-info_email",
-           "label": "Contact Info Email"
+           "label": "Email"
          },
          {
            "field_name": "role",
