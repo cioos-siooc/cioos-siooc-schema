@@ -3,7 +3,7 @@
   "dataset_type": "dataset",
   "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
-  "form_languages": ["en"],
+  "form_languages": ["en", "fr"],
   "dataset_fields": [
     {
       "field_name": "title_translated",
