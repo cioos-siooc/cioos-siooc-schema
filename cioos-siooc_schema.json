@@ -129,6 +129,30 @@
         },
         {
           "category": "Biogeochemical",
+          "value": "transientTracers",
+          "label": "Transient tracers",
+          "icon": "transient-tracers.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "particulateMatter",
+          "label": "Particulate matter",
+          "icon": "particulate-matter.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nitrousOxide",
+          "label": "Nitrous oxide",
+          "icon": "nitrous-oxide.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "stableCarbonIsotopes",
+          "label": "Stable carbon isotopes",
+          "icon": "stable-carbon-isotopes.svg"
+        },
+        {
+          "category": "Biogeochemical",
           "value": "dissolvedOrganicCarbon",
           "label": "Dissolved Organic Carbon",
           "icon": "dissolved-organic-carbon.svg"
@@ -182,11 +206,105 @@
           "icon": "currents.svg"
         },
         {
+          "category": "Physical",
+          "value": "oceanSurfaceStress",
+          "label": "Ocean surface stress",
+          "icon": "sea-surface-stress.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subsurfaceCurrents",
+          "label": "Subsurface currents",
+          "icon": "currents.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "oceanSurfaceHeatFlux",
+          "label": "Ocean surface heat flux",
+          "icon": "ocean-surface-heat-flux.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "phytoplanktonBiomassAndDiversity",
+          "label": "Phytoplankton biomass and diversity",
+          "icon": "phytoplankton.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "zooplanktonBiomassAndDiversity",
+          "label": "Zooplankton biomass and diversity",
+          "icon": "zooplankton.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "fishAbundanceAndDistribution",
+          "label": "Fish abundance and distribution",
+          "icon": "fish.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "microbeBiomassAndDiversity",
+          "label": "Microbe biomass and diversity",
+          "icon": "microbes.svg",
+          "emerging": true
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "marineTurtlesBirdsMammalsAbundanceAndDistribution",
+          "label": "Marine turtles, birds, mammals abundance and distribution",
+          "icon": "birds-mammals.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "hardCoralCoverAndComposition",
+          "label": "Hard coral cover and composition",
+          "icon": "hard-coral.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "seagrassCoverAndComposition",
+          "label": "Seagrass cover and composition",
+          "icon": "seagrass.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "macroalgalCanopyCoverAndComposition",
+          "label": "Macroalgal canopy cover and composition",
+          "icon": "macroalgal-canopy.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "invertebrateAbundanceAndDistribution",
+          "label": "Invertebrate abundance and distribution",
+          "icon": "invertebrates.svg",
+          "emerging": true
+        },
+        {
           "category": "Other",
           "value": "other",
           "label": "Other",
           "icon": "eov_other.svg"
+        },
+        {
+          "category": "Other",
+          "value": "marineDebris",
+          "label": "Marine debris",
+          "icon": "other.svg",
+          "emerging": true
+        },
+        {
+          "category": "Other",
+          "value": "oceanColor",
+          "label": "Ocean color",
+          "icon": "ocean-colour.svg"
+        },
+        {
+          "category": "Other",
+          "value": "oceanSound",
+          "label": "Ocean sound",
+          "icon": "ocean-sound.svg"
         }
+
       ]
     },
     {
