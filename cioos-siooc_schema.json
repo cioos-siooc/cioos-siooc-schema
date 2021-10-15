@@ -1,5 +1,5 @@
 {
-  "scheming_version": 1,
+  "scheming_version": 2,
   "dataset_type": "dataset",
   "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
@@ -129,6 +129,30 @@
         },
         {
           "category": "Biogeochemical",
+          "value": "transientTracers",
+          "label": "Transient tracers",
+          "icon": "transient-tracers.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "particulateMatter",
+          "label": "Particulate matter",
+          "icon": "particulate-matter.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nitrousOxide",
+          "label": "Nitrous oxide",
+          "icon": "nitrous-oxide.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "stableCarbonIsotopes",
+          "label": "Stable carbon isotopes",
+          "icon": "stable-carbon-isotopes.svg"
+        },
+        {
+          "category": "Biogeochemical",
           "value": "dissolvedOrganicCarbon",
           "label": "Dissolved Organic Carbon",
           "icon": "dissolved-organic-carbon.svg"
@@ -182,47 +206,105 @@
           "icon": "currents.svg"
         },
         {
-          "category": "Biogeochemical",
-          "value": "particulateMatter",
-          "label": "Particulate Matter",
-          "icon": "particulate-matter.svg"
+          "category": "Physical",
+          "value": "oceanSurfaceStress",
+          "label": "Ocean surface stress",
+          "icon": "sea-surface-stress.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subsurfaceCurrents",
+          "label": "Subsurface currents",
+          "icon": "currents.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "oceanSurfaceHeatFlux",
+          "label": "Ocean surface heat flux",
+          "icon": "ocean-surface-heat-flux.svg"
         },
         {
           "category": "BioEcosystems",
-          "value": "phytoplankton",
+          "value": "phytoplanktonBiomassAndDiversity",
           "label": "Phytoplankton biomass and diversity",
           "icon": "phytoplankton.svg"
         },
         {
           "category": "BioEcosystems",
-          "value": "zooplankton",
+          "value": "zooplanktonBiomassAndDiversity",
           "label": "Zooplankton biomass and diversity",
           "icon": "zooplankton.svg"
         },
         {
           "category": "BioEcosystems",
-          "value": "fish",
+          "value": "fishAbundanceAndDistribution",
           "label": "Fish abundance and distribution",
           "icon": "fish.svg"
         },
         {
           "category": "BioEcosystems",
-          "value": "microbe",
+          "value": "microbeBiomassAndDiversity",
           "label": "Microbe biomass and diversity",
-          "icon": "microbes.svg"
+          "icon": "microbes.svg",
+          "emerging": true
         },
         {
           "category": "BioEcosystems",
-          "value": "turtlesBirdsMammals",
+          "value": "marineTurtlesBirdsMammalsAbundanceAndDistribution",
           "label": "Marine turtles, birds, mammals abundance and distribution",
           "icon": "birds-mammals.svg"
         },
         {
-          "category": null,
+          "category": "BioEcosystems",
+          "value": "hardCoralCoverAndComposition",
+          "label": "Hard coral cover and composition",
+          "icon": "hard-coral.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "seagrassCoverAndComposition",
+          "label": "Seagrass cover and composition",
+          "icon": "seagrass.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "macroalgalCanopyCoverAndComposition",
+          "label": "Macroalgal canopy cover and composition",
+          "icon": "macroalgal-canopy.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "invertebrateAbundanceAndDistribution",
+          "label": "Invertebrate abundance and distribution",
+          "icon": "invertebrates.svg",
+          "emerging": true
+        },
+        {
+          "category": "Other",
           "value": "other",
           "label": "Other",
           "icon": "eov_other.svg"
+        },
+        {
+          "category": "Other",
+          "value": "marineDebris",
+          "label": "Marine debris",
+          "icon": "other.svg",
+          "emerging": true
+        },
+        {
+          "category": "Other",
+          "value": "oceanColor",
+          "label": "Ocean color",
+          "icon": "ocean-colour.svg"
+        },
+        {
+          "category": "Other",
+          "value": "oceanSound",
+          "label": "Ocean sound",
+          "icon": "ocean-sound.svg"
         }
+
       ]
     },
     {
@@ -417,13 +499,132 @@
       ]
     },
     {
+      "field_name": "aggregation-info",
+      "label": "Associated Datasets",
+      "form_blanks": 1,
+      "help_text": "https://wiki.esipfed.org/MD_AssociatedResource",
+      "repeating_label": "Associated Dataset",
+      "repeating_subfields": [
+        {
+          "field_name": "aggregate-dataset-identifier",
+          "label": "Parent or Linked Dataset",
+          "help_text": "Enter a dataset name or title",
+          "form_attrs": {
+            "data-module": "autocomplete",
+            "data-module-items": 5,
+            "data-module-interval": 500,
+            "data-module-source": "/api/3/action/package_autocomplete?q=?",
+            "data-module-key": "name",
+            "data-module-label": "title",
+            "data-module-class": "",
+            "class": ""
+          }
+        },
+        {
+          "field_name": "initiative-type",
+          "label": "Initiative Type",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_InitiativeTypeCode",
+          "preset": "select",
+          "choices": [{
+            "value": "campaign",
+            "label": "campaign"
+          }, {
+            "value": "collection",
+            "label": "collection"
+          }, {
+            "value": "exercise",
+            "label": "exercise"
+          }, {
+            "value": "experiment",
+            "label": "experiment"
+          }, {
+            "value": "investigation",
+            "label": "investigation"
+          }, {
+            "value": "mission",
+            "label": "mission"
+          }, {
+            "value": "operation",
+            "label": "operation"
+          }, {
+            "value": "platform",
+            "label": "platform"
+          }, {
+            "value": "process",
+            "label": "process"
+          }, {
+            "value": "program",
+            "label": "program"
+          }, {
+            "value": "project",
+            "label": "project"
+          }, {
+            "value": "sensor",
+            "label": "sensor"
+          }, {
+            "value": "study",
+            "label": "study"
+          }, {
+            "value": "task",
+            "label": "task"
+          }, {
+            "value": "trial",
+            "label": "trial"
+          }]
+        },
+        {
+          "field_name": "association-type",
+          "label": "Association Type",
+          "preset": "select",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_AssociationTypeCode",
+          "choices": [{
+              "value": "collectiveTitle",
+              "label": "collectiveTitle"
+            },
+            {
+              "value": "crossReference",
+              "label": "crossReference"
+            },
+            {
+              "value": "dependency",
+              "label": "dependency"
+            },
+            {
+              "value": "isComposedOf",
+              "label": "isComposedOf"
+            },
+            {
+              "value": "largerWorkCitation",
+              "label": "largerWorkCitation"
+            },
+            {
+              "value": "partOfSeamlessDatabase",
+              "label": "partOfSeamlessDatabase"
+            },
+            {
+              "value": "revisionOf",
+              "label": "revisionOf"
+            },
+            {
+              "value": "series",
+              "label": "series"
+            },
+            {
+              "value": "stereoMate",
+              "label": "stereoMate"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "field_name": "metadata-reference-date",
       "label": "Metadata Dates",
-      "preset": "composite_repeating",
       "display_snippet": null,
       "help_text": "Dates related to the metadata record",
       "form_blanks": 1,
-      "subfields": [{
+      "repeating_label": "Metadata Date",
+      "repeating_subfields": [{
           "field_name": "value",
           "label": "Date",
           "preset": "date",
@@ -505,11 +706,11 @@
     {
       "field_name": "dataset-reference-date",
       "label": "Resource Dates",
-      "preset": "composite_repeating",
       "display_snippet": null,
       "help_text": "Dates related to the dataset resource",
       "form_blanks": 1,
-      "subfields": [{
+      "repeating_label": "Resource Date",
+      "repeating_subfields": [{
           "field_name": "value",
           "label": "Date",
           "preset": "date",
@@ -656,31 +857,30 @@
     {
      "field_name": "metadata-point-of-contact",
      "label": "Point of Contact",
-     "preset": "composite_repeating",
      "help_text": "Individual or Organization who is the primary contact for this dataset",
      "required": true,
      "form_blanks": 1,
-     "subfields":[
+     "repeating_subfields":[
          {
            "field_name": "individual-name",
            "label": "Name",
            "form_placeholder": "Joe Bloggs",
            "require_one": true,
-           "hint": "name of orginization or individual"
+           "hint": "name of individual"
          },
          {
            "field_name": "organisation-name",
            "label": "Affiliation",
            "require_one": true,
-           "preset": "dataset_organization"
+           "hint": "name of orginization or affiliation if individual name is used"
          },
          {
            "field_name": "contact-info_online-resource",
-           "label": "Contact Info Online Resource"
+           "label": "Resource"
          },
          {
            "field_name": "contact-info_email",
-           "label": "Contact Info Email"
+           "label": "Email"
          },
          {
            "field_name": "role",
@@ -785,32 +985,30 @@
     {
      "field_name": "cited-responsible-party",
      "label": "Responsible Party",
-     "preset": "composite_repeating",
      "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
      "required": true,
      "form_blanks": 1,
-     "subfields":[
+     "repeating_subfields":[
          {
            "field_name": "individual-name",
-           "label": "Individual Name",
+           "label": "Name",
            "form_placeholder": "Joe Bloggs",
            "require_one": true,
            "hint": "name of individual"
          },
          {
            "field_name": "organisation-name",
-           "label": "Organisation Name / Affiliation",
+           "label": "Affiliation",
            "require_one": true,
-           "form_snippet": "organization.html",
            "hint": "name of orginization or affiliation if individual name is used"
          },
          {
            "field_name": "contact-info_online-resource",
-           "label": "Contact Info Online Resource"
+           "label": "Resource"
          },
          {
            "field_name": "contact-info_email",
-           "label": "Contact Info Email"
+           "label": "Email"
          },
          {
            "field_name": "role",
@@ -936,8 +1134,7 @@
     {
       "field_name": "temporal-extent",
       "label": "Temporal Extent",
-      "preset": "composite",
-      "subfields": [{
+      "simple_subfields": [{
           "field_name": "begin",
           "label": "Begin",
           "preset": "date",
@@ -955,17 +1152,14 @@
     }, {
       "field_name": "vertical-extent",
       "label": "Vertical Extent",
-      "preset": "composite",
-      "subfields": [{
+      "simple_subfields": [{
           "field_name": "min",
           "label": "Min",
-          "preset": "number",
           "form_attrs":{"pattern":"[0-9.]+"}
         },
         {
           "field_name": "max",
           "label": "Max",
-          "preset": "number",
           "form_attrs":{"pattern":"[0-9.]+"}
         }
       ]
@@ -994,8 +1188,7 @@
        "field_name": "unique-resource-identifier-full",
        "label": "Citation identifier",
        "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
-       "preset": "composite",
-       "subfields": [
+       "simple_subfields": [
          {
            "field_name": "authority",
            "label": "Authority",
