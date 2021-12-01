@@ -289,7 +289,7 @@
           "category": "Other",
           "value": "marineDebris",
           "label": "Marine debris",
-          "icon": "other.svg",
+          "icon": "eov_other.svg",
           "emerging": true
         },
         {
