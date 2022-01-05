@@ -884,8 +884,7 @@
          {
            "field_name": "role",
            "label": "Role",
-           "preset": "select",
-           "display_snippet": "select.html",
+           "preset": "multiple_select",
            "required": true,
            "choices": [
              {
@@ -1012,8 +1011,7 @@
          {
            "field_name": "role",
            "label": "Role",
-           "preset": "select",
-           "display_snippet": "select.html",
+           "preset": "multiple_select",
            "required": true,
            "choices": [
              {
