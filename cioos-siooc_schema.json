@@ -1106,7 +1106,132 @@
         }
      ]
     },
-
+    {
+     "field_name": "distributor",
+     "label": "Distributor",
+     "help_text": "All individuals and organizations who disseminate copies of the resource in either electronic or print form",
+     "required": false,
+     "form_blanks": 1,
+     "repeating_subfields":[
+         {
+           "field_name": "individual-name",
+           "label": "Name",
+           "form_placeholder": "Joe Bloggs",
+           "require_one": true,
+           "hint": "name of individual"
+         },
+         {
+           "field_name": "organisation-name",
+           "label": "Affiliation",
+           "require_one": true,
+           "hint": "name of orginization or affiliation if individual name is used"
+         },
+         {
+           "field_name": "contact-info_online-resource",
+           "label": "Resource"
+         },
+         {
+           "field_name": "contact-info_email",
+           "label": "Email"
+         },
+         {
+           "field_name": "role",
+           "label": "Role",
+           "preset": "multiple_select",
+           "required": true,
+           "choices": [
+             {
+               "value": "author",
+               "label": "Author"
+             },
+             {
+               "value": "custodian",
+               "label": "Custodian"
+             },
+             {
+               "value": "distributor",
+               "label": "Distributor"
+             },
+             {
+               "value": "originator",
+               "label": "Originator"
+             },
+             {
+               "value": "owner",
+               "label": "Owner"
+             },
+             {
+               "value": "pointOfContact",
+               "label": "Point of Contact"
+             },
+             {
+               "value": "principalInvestigator",
+               "label": "Principal Investigator"
+             },
+             {
+               "value": "processor",
+               "label": "Processor"
+             },
+             {
+               "value": "publisher",
+               "label": "Publisher"
+             },
+             {
+               "value": "resourceProvider",
+               "label": "Resource Provider"
+             },
+             {
+               "value": "user",
+               "label": "User"
+             },
+             {
+               "value": "sponsor",
+               "label": "Sponsor"
+             }
+             ,
+             {
+               "value": "coAuthor",
+               "label": "Co Author"
+             }
+             ,
+             {
+               "value": "collaborator",
+               "label": "Collaborator"
+             }
+             ,
+             {
+               "value": "editor",
+               "label": "Editor"
+             }
+             ,
+             {
+               "value": "mediator",
+               "label": "Mediator"
+             }
+             ,
+             {
+               "value": "rightsHolder",
+               "label": "Rights Holder"
+             }
+             ,
+             {
+               "value": "contributor",
+               "label": "Contributor"
+             }
+             ,
+             {
+               "value": "funder",
+               "label": "Funder"
+             }
+             ,
+             {
+               "value": "stakeholder",
+               "label": "Stakeholder"
+             }
+          ]
+        }
+     ]
+    },
     {
       "field_name": "spatial",
       "label": "Spatial Extent",
