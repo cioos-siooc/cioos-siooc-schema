@@ -3,10 +3,7 @@
   "dataset_type": "dataset",
   "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
-  "form_languages": [
-    "en",
-    "fr"
-  ],
+  "form_languages": ["en", "fr"],
   "dataset_fields": [
     {
       "field_name": "title_translated",
@@ -17,9 +14,7 @@
         "fr": "Titre",
         "en": "Title"
       },
-      "slug_lang": [
-        "en"
-      ],
+      "slug_lang": ["en"],
       "form_attrs": {
         "data-module": "slug-preview-target"
       },
