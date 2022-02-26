@@ -876,14 +876,54 @@
           "hint": "name of individual"
         },
         {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "form_placeholder": "0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "form_placeholder": ""
+        },
+        {
           "field_name": "organisation-name",
           "label": "Affiliation",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
         {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "form_placeholder": "0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "form_placeholder": ""
+        },
+        {
           "field_name": "contact-info_online-resource",
-          "label": "Resource"
+          "label": "Resource URL"
         },
         {
           "field_name": "contact-info_email",
@@ -992,14 +1032,54 @@
           "hint": "name of individual"
         },
         {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "form_placeholder": "0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "form_placeholder": ""
+        },
+        {
           "field_name": "organisation-name",
           "label": "Affiliation",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
         {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "form_placeholder": "0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "form_placeholder": ""
+        },
+        {
           "field_name": "contact-info_online-resource",
-          "label": "Resource"
+          "label": "Resource URL"
         },
         {
           "field_name": "contact-info_email",
@@ -1108,14 +1188,54 @@
           "hint": "name of individual"
         },
         {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "form_placeholder": "0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "form_placeholder": ""
+        },
+        {
           "field_name": "organisation-name",
           "label": "Affiliation",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
         {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "form_placeholder": "0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "form_placeholder": ""
+        },
+        {
           "field_name": "contact-info_online-resource",
-          "label": "Resource"
+          "label": "Resource URL"
         },
         {
           "field_name": "contact-info_email",
