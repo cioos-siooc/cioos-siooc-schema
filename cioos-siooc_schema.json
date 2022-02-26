@@ -48,7 +48,7 @@
       "preset": "fluent_tags",
       "display_snippet": null,
       "required": true,
-      "tag_validators": "tag_length_validator cioos_tag_name_validator",
+      "tag_validators": "cioos_tag_name_validator",
       "label": {
         "fr": "Mots-clés",
         "en": "Keywords"
