@@ -27,27 +27,27 @@
     {
        "field_name": "organization-uri",
        "label": "Organization identifier",
-       "preset": "composite",
-       "subfields": [
+       "simple_subfields": [
          {
            "field_name": "authority",
            "label": "Authority",
-           "form_placeholder": "doi.org"
+           "display_snippet": null,
+           "form_placeholder": "ror.org"
          },
          {
            "field_name": "code-space",
            "label": "Code Space",
-           "form_placeholder": "12345"
+           "display_snippet": null
          },
          {
            "field_name": "code",
            "label": "Code",
-           "form_placeholder": "67890"
+           "form_placeholder": "https://ror.org/0029jxk29"
          },
          {
            "field_name": "version",
-           "label": "Version",
-           "form_placeholder": "1"
+           "display_snippet": null,
+           "label": "Version"
          }
        ]
      },
