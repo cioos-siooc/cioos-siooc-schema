@@ -1,9 +1,12 @@
 {
   "scheming_version": 2,
   "dataset_type": "dataset",
-  "about": "An initial implementation of the cioos-siooc CKAN dataset schema",
+  "about": "An initial implementation of the hakai CKAN dataset schema",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "form_languages": ["en", "fr"],
+  "alternate_languages": {
+    "fr": ["en"]
+  },
   "dataset_fields": [{
       "field_name": "title_translated",
       "preset": "fluent_core_translated",
@@ -48,7 +51,7 @@
       "preset": "fluent_tags",
       "display_snippet": null,
       "required": true,
-      "tag_validators": "cioos_tag_name_validator",
+      "tag_validators": "tag_length_validator cioos_tag_name_validator",
       "label": {
         "fr": "Mots-clés",
         "en": "Keywords"
@@ -490,6 +493,89 @@
         "value": "deprecated",
         "label": "Deprecated"
       }]
+    },
+    {
+      "field_name": "topic-category",
+      "label": "Topic Category",
+      "preset": "multiple_select",
+      "required": true,
+      "choices": [{
+          "value": "farming",
+          "label": "farming"
+        },
+        {
+          "value": "biota",
+          "label": "biota"
+        },
+        {
+          "value": "boundaries",
+          "label": "boundaries"
+        },
+        {
+          "value": "climatologyMeteorologyAtmosphere",
+          "label": "climatologyMeteorologyAtmosphere"
+        },
+        {
+          "value": "economy",
+          "label": "economy"
+        },
+        {
+          "value": "elevation",
+          "label": "elevation"
+        },
+        {
+          "value": "environment",
+          "label": "environment"
+        },
+        {
+          "value": "geoscientificInformation",
+          "label": "geoscientificInformation"
+        },
+        {
+          "value": "health",
+          "label": "health"
+        },
+        {
+          "value": "imageryBaseMapsEarthCover",
+          "label": "imageryBaseMapsEarthCover"
+        },
+        {
+          "value": "intelligenceMilitary",
+          "label": "intelligenceMilitary"
+        },
+        {
+          "value": "inlandWaters",
+          "label": "inlandWaters"
+        },
+        {
+          "value": "location",
+          "label": "location"
+        },
+        {
+          "value": "oceans",
+          "label": "oceans"
+        },
+        {
+          "value": "planningCadastre",
+          "label": "planningCadastre"
+        },
+        {
+          "value": "society",
+          "label": "society"
+        },
+        {
+          "value": "structure",
+          "label": "structure"
+        },
+        {
+          "value": "transportation",
+          "label": "transportation"
+        },
+        {
+          "value": "utilitiesCommunication",
+          "label": "utilitiesCommunication"
+        }
+      ]
     },
     {
       "field_name": "aggregation-info",
@@ -995,6 +1081,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "require_one": true,
+          "form_snippet": "organization.html",
           "hint": "name of orginization or affiliation if individual name is used"
         },
         {
