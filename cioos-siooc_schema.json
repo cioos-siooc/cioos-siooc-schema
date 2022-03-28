@@ -516,8 +516,7 @@
           "label": "Initiative Type",
           "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_InitiativeTypeCode",
           "preset": "select",
-          "choices": [
-            {
+          "choices": [{
               "value": "campaign",
               "label": "campaign"
             },
@@ -584,8 +583,7 @@
           "label": "Association Type",
           "preset": "select",
           "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#DS_AssociationTypeCode",
-          "choices": [
-            {
+          "choices": [{
               "value": "collectiveTitle",
               "label": "collectiveTitle"
             },
@@ -632,8 +630,7 @@
       "help_text": "Dates related to the metadata record",
       "form_blanks": 1,
       "repeating_label": "Metadata Date",
-      "repeating_subfields": [
-        {
+      "repeating_subfields": [{
           "field_name": "value",
           "label": "Date",
           "preset": "date",
@@ -720,8 +717,7 @@
       "help_text": "Dates related to the dataset resource",
       "form_blanks": 1,
       "repeating_label": "Resource Date",
-      "repeating_subfields": [
-        {
+      "repeating_subfields": [{
           "field_name": "value",
           "label": "Date",
           "preset": "date",
@@ -1238,8 +1234,7 @@
     {
       "field_name": "temporal-extent",
       "label": "Temporal Extent",
-      "simple_subfields": [
-        {
+      "simple_subfields": [{
           "field_name": "begin",
           "label": "Begin",
           "preset": "date",
@@ -1262,8 +1257,7 @@
     {
       "field_name": "vertical-extent",
       "label": "Vertical Extent",
-      "simple_subfields": [
-        {
+      "simple_subfields": [{
           "field_name": "min",
           "label": "Min",
           "form_attrs": {
@@ -1296,70 +1290,65 @@
       "help_text": "Default language used in this datasets metadata"
     },
     {
-       "field_name": "unique-resource-identifier-full",
-       "label": "Citation identifier",
-       "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
-       "simple_subfields": [
-         {
-           "field_name": "authority",
-           "label": "Authority",
-           "form_placeholder": "doi.org"
-         },
-         {
-           "field_name": "code-space",
-           "label": "Code Space",
-           "form_placeholder": "12345"
-         },
-         {
-           "field_name": "code",
-           "label": "Code",
-           "form_placeholder": "67890"
-         },
-         {
-           "field_name": "version",
-           "label": "Version",
-           "form_placeholder": "1"
-         }
-       ]
-     },
-     {
-       "field_name": "xml_location_url",
-       "label": "XML Metadata File Location",
-       "form_placeholder":"http://waf/location/xml_metadata_file.xml",
-       "display_property":"foaf:homepage",
-       "display_snippet":"link.html",
-       "required": false,
-       "display_snippet": null
-     },
-     {
-       "field_name": "harvest_document_content",
-       "label": "External Harvest Document Content",
-       "display_snippet": null,
-       "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
-     },
-     {
-       "field_name": "owner_org",
-       "label": "Organization",
-       "preset": "dataset_organization",
-       "display_snippet": null
-     },
-     {
-       "field_name": "version",
-       "label": "Version",
-       "validators": "ignore_missing unicode package_version_validator",
-       "form_placeholder": "1.0"
-     },{
-       "field_name": "spatial_initial_max_zoom",
-       "label": "Initial dataset map max zoom level",
-       "display_snippet": null,
-       "validators": "ignore_missing int_validator",
-       "form_placeholder": "9",
-       "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
-     }
-
-
-  ],
-  "resource_fields": [
+      "field_name": "unique-resource-identifier-full",
+      "label": "Citation identifier",
+      "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
+      "simple_subfields": [{
+          "field_name": "authority",
+          "label": "Authority",
+          "form_placeholder": "doi.org"
+        },
+        {
+          "field_name": "code-space",
+          "label": "Code Space",
+          "form_placeholder": "12345"
+        },
+        {
+          "field_name": "code",
+          "label": "Code",
+          "form_placeholder": "67890"
+        },
+        {
+          "field_name": "version",
+          "label": "Version",
+          "form_placeholder": "1"
+        }
+      ]
+    },
+    {
+      "field_name": "xml_location_url",
+      "label": "XML Metadata File Location",
+      "form_placeholder": "http://waf/location/xml_metadata_file.xml",
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html",
+      "required": false,
+      "display_snippet": null
+    },
+    {
+      "field_name": "harvest_document_content",
+      "label": "External Harvest Document Content",
+      "display_snippet": null,
+      "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization",
+      "display_snippet": null
+    },
+    {
+      "field_name": "version",
+      "label": "Version",
+      "validators": "ignore_missing unicode package_version_validator",
+      "form_placeholder": "1.0"
+    }, {
+      "field_name": "spatial_initial_max_zoom",
+      "label": "Initial dataset map max zoom level",
+      "display_snippet": null,
+      "validators": "ignore_missing int_validator",
+      "form_placeholder": "9",
+      "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
+    },
     {
       "field_name": "xml_location_url",
       "label": "XML Metadata File Location",
