@@ -291,8 +291,8 @@
         },
         {
           "category": "Cross-disciplinary",
-          "value": "oceanColor",
-          "label": "Ocean color",
+          "value": "oceanColour",
+          "label": "Ocean colour",
           "icon": "ocean-colour.svg"
         },
         {
