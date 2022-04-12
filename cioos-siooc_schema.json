@@ -1356,6 +1356,13 @@
       "validators": "ignore_missing int_validator",
       "form_placeholder": "9",
       "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
+    },
+    {
+      "field_name": "projects",
+      "label": "Projects",
+      "preset": "multiple_text",
+      "required": false,
+      "validators": "scheming_multiple_text cioos_clean_and_populate_projects",
     }
   ],
   "resource_fields": [{
