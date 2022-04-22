@@ -35,6 +35,7 @@
     {
       "field_name": "notes_translated",
       "preset": "fluent_markdown",
+      "output_validators": "fluent_core_translated_output fluent_text_output",
       "label": "Description",
       "display_snippet": null,
       "required": true,
@@ -291,8 +292,8 @@
         },
         {
           "category": "Cross-disciplinary",
-          "value": "oceanColor",
-          "label": "Ocean color",
+          "value": "oceanColour",
+          "label": "Ocean colour",
           "icon": "ocean-colour.svg"
         },
         {
@@ -1368,6 +1369,7 @@
     },
     {
       "field_name": "spatial",
+      "preset": "json_object",
       "label": "Spatial Extent",
       "form_snippet": "spatial.html"
     },
