@@ -866,6 +866,7 @@
     {
       "field_name": "metadata-point-of-contact",
       "label": "Point of Contact",
+      "display_snippet": null,
       "help_text": "Individual or Organization who is the primary contact for this dataset",
       "required": true,
       "form_blanks": 1,
@@ -1034,6 +1035,7 @@
     {
       "field_name": "cited-responsible-party",
       "label": "Responsible Party",
+      "display_snippet": null,
       "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
       "required": true,
       "form_blanks": 1,
@@ -1202,6 +1204,7 @@
     {
       "field_name": "distributor",
       "label": "Distributor",
+      "display_snippet": null,
       "help_text": "All individuals and organizations who disseminate copies of the resource in either electronic or print form",
       "required": false,
       "form_blanks": 1,
