@@ -806,7 +806,6 @@
       "field_name": "frequency-of-update",
       "label": "Maintenance and update frequency",
       "preset": "select",
-      "display_snippet": "select.html",
       "display_snippet": null,
       "required": true,
       "choices": [{
