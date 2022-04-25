@@ -1521,7 +1521,7 @@
       "label": "Projects",
       "preset": "multiple_text",
       "required": false,
-      "validators": "scheming_multiple_text cioos_clean_and_populate_projects"
+      "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_projects"
     }
   ],
   "resource_fields": [{
