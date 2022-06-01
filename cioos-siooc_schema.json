@@ -1208,6 +1208,7 @@
     },
     {
       "field_name": "spatial",
+      "preset": "json_object",
       "label": "Spatial Extent",
       "form_snippet": "spatial.html"
     },
