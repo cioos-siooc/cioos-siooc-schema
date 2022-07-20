@@ -1323,40 +1323,6 @@
       "label": "XML Metadata File Location",
       "form_placeholder": "http://waf/location/xml_metadata_file.xml",
       "display_property": "foaf:homepage",
-      "required": false,
-      "display_snippet": null
-    },
-    {
-      "field_name": "harvest_document_content",
-      "label": "External Harvest Document Content",
-      "display_snippet": null,
-      "help_text": "(Optional) Contents of external full xml metadata file. This field is populated from the XML Metadata File Location URL during harvest"
-    },
-    {
-      "field_name": "owner_org",
-      "label": "Organization",
-      "preset": "dataset_organization",
-      "display_snippet": null
-    },
-    {
-      "field_name": "version",
-      "label": "Version",
-      "validators": "ignore_missing unicode package_version_validator",
-      "form_placeholder": "1.0"
-    }, {
-      "field_name": "spatial_initial_max_zoom",
-      "label": "Initial dataset map max zoom level",
-      "display_snippet": null,
-      "validators": "ignore_missing int_validator",
-      "form_placeholder": "9",
-      "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
-    },
-    {
-      "field_name": "xml_location_url",
-      "label": "XML Metadata File Location",
-      "form_placeholder": "http://waf/location/xml_metadata_file.xml",
-      "display_property": "foaf:homepage",
-      "display_snippet": "link.html",
       "required": true,
       "display_snippet": null,
       "help_text": "(Recomended) URL for the external xml metadata file which represents the full cioos metadata reocrd. This is often the same file used to create this record if the dataset is generated using the spatial harvester. If using the api to create datasets this field will not be set automaticly."
@@ -1378,8 +1344,7 @@
       "label": "Version",
       "validators": "ignore_missing unicode package_version_validator",
       "form_placeholder": "1.0"
-    },
-    {
+    }, {
       "field_name": "spatial_initial_max_zoom",
       "label": "Initial dataset map max zoom level",
       "display_snippet": null,
