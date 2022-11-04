@@ -1522,6 +1522,30 @@
       "preset": "multiple_text",
       "required": false,
       "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_projects"
+    },
+    {
+      "field_name": "measurement-techniques",
+      "label": "Measurement Techniques",
+      "preset": "multiple_text",
+      "required": false,
+      "display_snippet": null,
+      "validators": "ignore_missing unicode scheming_multiple_text"
+    },
+    {
+      "field_name": "variable-measured",
+      "label": "Variable Measured",
+      "preset": "multiple_text",
+      "required": false,
+      "display_snippet": null,
+      "validators": "ignore_missing unicode scheming_multiple_text"
+    },
+    {
+      "field_name": "provider",
+      "label": "Provider",
+      "preset": "multiple_text",
+      "required": false,
+      "display_snippet": null,
+      "validators": "ignore_missing unicode scheming_multiple_text"
     }
   ],
   "resource_fields": [{
