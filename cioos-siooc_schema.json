@@ -873,7 +873,7 @@
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -906,7 +906,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -1042,7 +1042,7 @@
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -1075,7 +1075,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -1211,7 +1211,7 @@
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -1244,7 +1244,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
