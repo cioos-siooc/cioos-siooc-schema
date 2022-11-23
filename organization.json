@@ -38,12 +38,13 @@
            "field_name": "authority",
            "label": "Authority",
            "display_snippet": null,
-           "form_placeholder": "ror.org"
+           "form_placeholder": "ROR"
          },
          {
            "field_name": "code-space",
            "label": "Code Space",
-           "display_snippet": null
+           "display_snippet": null,
+           "form_placeholder": "ror.org"
          },
          {
            "field_name": "code",

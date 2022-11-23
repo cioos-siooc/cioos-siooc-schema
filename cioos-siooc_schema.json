@@ -882,13 +882,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -914,13 +914,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1051,13 +1051,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -1083,13 +1083,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1220,13 +1220,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -1252,13 +1252,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1462,17 +1462,17 @@
       "simple_subfields": [{
           "field_name": "authority",
           "label": "Authority",
-          "form_placeholder": "doi.org"
+          "form_placeholder": "DOI"
         },
         {
           "field_name": "code-space",
           "label": "Code Space",
-          "form_placeholder": "12345"
+          "form_placeholder": "doi.org"
         },
         {
           "field_name": "code",
           "label": "Code",
-          "form_placeholder": "67890"
+          "form_placeholder": "https://doi.org/10-3565/67890"
         },
         {
           "field_name": "version",
