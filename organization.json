@@ -7,6 +7,7 @@
     {
       "field_name": "title_translated",
       "preset": "fluent_core_translated",
+      "display_snippet": "fluent_text.html",
       "label": {
         "fr": "Titre",
         "en": "Title"
@@ -21,27 +22,34 @@
       "field_name": "name",
       "label": "URL",
       "validators": "not_empty unicode name_validator group_name_validator",
-      "form_snippet": "slug.html",
+      "preset": "dataset_slug",
+      "display_snippet": null,
+      "form_attrs": {
+        "data-module": "slug-preview-slug"
+      },
       "form_placeholder": "my-organization"
     },
     {
        "field_name": "organization-uri",
        "label": "Organization identifier",
+       "display_snippet": null,
        "simple_subfields": [
          {
            "field_name": "authority",
            "label": "Authority",
            "display_snippet": null,
-           "form_placeholder": "ror.org"
+           "form_placeholder": "ROR"
          },
          {
            "field_name": "code-space",
            "label": "Code Space",
-           "display_snippet": null
+           "display_snippet": null,
+           "form_placeholder": "ror.org"
          },
          {
            "field_name": "code",
            "label": "Code",
+           "display_snippet": null,
            "form_placeholder": "https://ror.org/0029jxk29"
          },
          {
@@ -54,6 +62,7 @@
     {
       "field_name": "description_translated",
       "preset": "fluent_markdown",
+      "display_snippet": "fluent_text.html",
       "label": "Description",
       "form_placeholder": {
         "fr": "Quelques informations à propos de mon organisation...",
@@ -63,6 +72,7 @@
     {
       "field_name": "image_url_translated",
       "preset": "fluent_link",
+      "display_snippet": "fluent_link.html",
       "label": {
         "fr": "URL de l'image",
         "en": "Image URL"
@@ -74,7 +84,8 @@
     },
     {
       "field_name": "external_home_url",
-      "label": "External Home Page URL"
+      "label": "External URL",
+      "hint": "External Home Page URL"
     }
   ]
 }

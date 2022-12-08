@@ -873,7 +873,7 @@
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -882,13 +882,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -906,7 +906,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -914,13 +914,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1042,7 +1042,7 @@
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -1051,13 +1051,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -1075,7 +1075,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -1083,13 +1083,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1211,7 +1211,7 @@
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -1220,13 +1220,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -1244,7 +1244,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -1252,13 +1252,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1462,17 +1462,17 @@
       "simple_subfields": [{
           "field_name": "authority",
           "label": "Authority",
-          "form_placeholder": "doi.org"
+          "form_placeholder": "DOI"
         },
         {
           "field_name": "code-space",
           "label": "Code Space",
-          "form_placeholder": "12345"
+          "form_placeholder": "doi.org"
         },
         {
           "field_name": "code",
           "label": "Code",
-          "form_placeholder": "67890"
+          "form_placeholder": "https://doi.org/10-3565/67890"
         },
         {
           "field_name": "version",
@@ -1537,12 +1537,14 @@
       "preset": "resource_url_upload"
     },
     {
-      "field_name": "name",
+      "field_name": "name_translated",
+      "preset": "fluent_core_translated",
       "label": "Name",
       "form_placeholder": "eg. January 2011 Gold Prices"
     },
     {
-      "field_name": "description",
+      "field_name": "description_translated",
+      "preset": "fluent_core_translated",
       "label": "Description",
       "form_snippet": "markdown.html",
       "form_placeholder": "Some useful notes about the data"
