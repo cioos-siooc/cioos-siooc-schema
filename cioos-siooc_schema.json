@@ -7,7 +7,8 @@
   "alternate_languages": {
     "fr": ["en"]
   },
-  "dataset_fields": [{
+  "dataset_fields": [
+    {
       "field_name": "title_translated",
       "preset": "fluent_core_translated",
       "display_snippet": null,
@@ -68,7 +69,8 @@
       "preset": "multiple_select",
       "required": true,
       "validators": "scheming_multiple_choice cioos_clean_and_populate_eovs",
-      "choices": [{
+      "choices": [
+        {
           "category": "Biogeochemical",
           "value": "oxygen",
           "label": "Oxygen",
@@ -327,7 +329,8 @@
       "preset": "select",
       "display_snippet": "select.html",
       "required": true,
-      "choices": [{
+      "choices": [
+        {
           "value": "attribute",
           "label": "Attribute"
         },
@@ -439,61 +442,80 @@
       "preset": "select",
       "display_snippet": "select.html",
       "required": true,
-      "choices": [{
-        "value": "completed",
-        "label": "Completed"
-      }, {
-        "value": "historicalArchive",
-        "label": "Historical Archive"
-      }, {
-        "value": "obsolete",
-        "label": "Obsolete"
-      }, {
-        "value": "onGoing",
-        "label": "On Going"
-      }, {
-        "value": "planned",
-        "label": "Planned"
-      }, {
-        "value": "required",
-        "label": "Required"
-      }, {
-        "value": "underDevelopment",
-        "label": "Under Development"
-      }, {
-        "value": "final",
-        "label": "Final"
-      }, {
-        "value": "pending",
-        "label": "Pending"
-      }, {
-        "value": "retired",
-        "label": "Retired"
-      }, {
-        "value": "superseded",
-        "label": "Superseded"
-      }, {
-        "value": "tentative",
-        "label": "Tentative"
-      }, {
-        "value": "valid",
-        "label": "Valid"
-      }, {
-        "value": "accepted",
-        "label": "Accepted"
-      }, {
-        "value": "notAccepted",
-        "label": "Not Accepted"
-      }, {
-        "value": "withdrawn",
-        "label": "Withdrawn"
-      }, {
-        "value": "proposed",
-        "label": "Proposed"
-      }, {
-        "value": "deprecated",
-        "label": "Deprecated"
-      }]
+      "choices": [
+        {
+          "value": "completed",
+          "label": "Completed"
+        },
+        {
+          "value": "historicalArchive",
+          "label": "Historical Archive"
+        },
+        {
+          "value": "obsolete",
+          "label": "Obsolete"
+        },
+        {
+          "value": "onGoing",
+          "label": "On Going"
+        },
+        {
+          "value": "planned",
+          "label": "Planned"
+        },
+        {
+          "value": "required",
+          "label": "Required"
+        },
+        {
+          "value": "underDevelopment",
+          "label": "Under Development"
+        },
+        {
+          "value": "final",
+          "label": "Final"
+        },
+        {
+          "value": "pending",
+          "label": "Pending"
+        },
+        {
+          "value": "retired",
+          "label": "Retired"
+        },
+        {
+          "value": "superseded",
+          "label": "Superseded"
+        },
+        {
+          "value": "tentative",
+          "label": "Tentative"
+        },
+        {
+          "value": "valid",
+          "label": "Valid"
+        },
+        {
+          "value": "accepted",
+          "label": "Accepted"
+        },
+        {
+          "value": "notAccepted",
+          "label": "Not Accepted"
+        },
+        {
+          "value": "withdrawn",
+          "label": "Withdrawn"
+        },
+        {
+          "value": "proposed",
+          "label": "Proposed"
+        },
+        {
+          "value": "deprecated",
+          "label": "Deprecated"
+        }
+      ]
     },
     {
       "field_name": "topic-category",
@@ -583,7 +605,8 @@
       "label": "Associated Datasets",
       "form_blanks": 1,
       "help_text": "https://wiki.esipfed.org/MD_AssociatedResource",
-      "repeating_subfields": [{
+      "repeating_subfields": [
+        {
           "field_name": "aggregate-dataset-identifier",
           "label": "Parent or Linked Dataset",
           "help_text": "Enter a dataset name or title",
@@ -732,7 +755,8 @@
         {
           "field_name": "type",
           "label": "Type",
-          "choices": [{
+          "choices": [
+            {
               "value": "creation",
               "label": "Creation"
             },
@@ -820,7 +844,8 @@
         {
           "field_name": "type",
           "label": "Type",
-          "choices": [{
+          "choices": [
+            {
               "value": "creation",
               "label": "Creation"
             },
@@ -894,7 +919,8 @@
       "preset": "select",
       "display_snippet": null,
       "required": true,
-      "choices": [{
+      "choices": [
+        {
           "value": "continual",
           "label": "Continual"
         },
@@ -955,11 +981,12 @@
       "help_text": "Individual or Organization who is the primary contact for this dataset",
       "required": true,
       "form_blanks": 1,
-      "repeating_subfields": [{
+      "repeating_subfields": [
+        {
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -968,13 +995,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -992,7 +1019,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -1000,13 +1027,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1033,7 +1060,8 @@
           "label": "Role",
           "preset": "multiple_select",
           "required": true,
-          "choices": [{
+          "choices": [
+            {
               "value": "author",
               "label": "Author"
             },
@@ -1124,11 +1152,12 @@
       "help_text": "All individuals and organizations who contributed to the dataset and thus should appear in the citation",
       "required": true,
       "form_blanks": 1,
-      "repeating_subfields": [{
+      "repeating_subfields": [
+        {
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -1137,13 +1166,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -1161,7 +1190,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "form_snippet": "organization.html",
           "hint": "name of orginization or affiliation if individual name is used"
@@ -1170,13 +1199,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1203,7 +1232,8 @@
           "label": "Role",
           "preset": "multiple_select",
           "required": true,
-          "choices": [{
+          "choices": [
+            {
               "value": "author",
               "label": "Author"
             },
@@ -1294,11 +1324,12 @@
       "help_text": "All individuals and organizations who disseminate copies of the resource in either electronic or print form",
       "required": false,
       "form_blanks": 1,
-      "repeating_subfields": [{
+      "repeating_subfields": [
+        {
           "field_name": "individual-name",
           "label": "Name",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "individual-uri_code",
+          "display_uri_field_prefix": "individual-uri_",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
@@ -1307,13 +1338,13 @@
           "field_name": "individual-uri_authority",
           "label": "Individual Identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "orcid.org"
+          "form_placeholder": "ORCID"
         },
         {
           "field_name": "individual-uri_code-space",
           "label": "Individual Identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "orcid.org"
         },
         {
           "field_name": "individual-uri_code",
@@ -1331,7 +1362,7 @@
           "field_name": "organisation-name",
           "label": "Affiliation",
           "display_snippet": "uri_text.html",
-          "display_uri_field": "organisation-uri_code",
+          "display_uri_field_prefix": "organisation-uri_",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
         },
@@ -1339,13 +1370,13 @@
           "field_name": "organisation-uri_authority",
           "label": "Organisation identifier Authority",
           "display_snippet": null,
-          "form_placeholder": "ror.org"
+          "form_placeholder": "ROR"
         },
         {
           "field_name": "organisation-uri_code-space",
           "label": "Organisation identifier Code Space",
           "display_snippet": null,
-          "form_placeholder": ""
+          "form_placeholder": "ror.org"
         },
         {
           "field_name": "organisation-uri_code",
@@ -1372,7 +1403,8 @@
           "label": "Role",
           "preset": "multiple_select",
           "required": true,
-          "choices": [{
+          "choices": [
+            {
               "value": "author",
               "label": "Author"
             },
@@ -1531,7 +1563,8 @@
       "label": "Default Locale",
       "preset": "select",
       "display_snippet": "select.html",
-      "choices": [{
+      "choices": [
+        {
           "value": "en",
           "label": "English"
         },
@@ -1546,20 +1579,21 @@
       "field_name": "unique-resource-identifier-full",
       "label": "Citation identifier",
       "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
-      "simple_subfields": [{
+      "simple_subfields": [
+        {
           "field_name": "authority",
           "label": "Authority",
-          "form_placeholder": "doi.org"
+          "form_placeholder": "DOI"
         },
         {
           "field_name": "code-space",
           "label": "Code Space",
-          "form_placeholder": "12345"
+          "form_placeholder": "doi.org"
         },
         {
           "field_name": "code",
           "label": "Code",
-          "form_placeholder": "67890"
+          "form_placeholder": "https://doi.org/10-3565/67890"
         },
         {
           "field_name": "version",
@@ -1609,20 +1643,51 @@
       "preset": "multiple_text",
       "required": false,
       "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_projects"
+    },
+    {
+      "field_name": "datacentre",
+      "label": "Data Centre",
+      "preset": "multiple_text",
+      "required": false,
+      "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_datacentre"
+    },
+    {
+      "field_name": "included_in_data_catalogue",
+      "label": "Included in Data Catalogue",
+      "display_snippet": null,
+      "help_text": "Catalogues containing this dataset",
+      "form_blanks": 1,
+      "repeating_subfields": [
+        {
+          "field_name": "name",
+          "label": "Name"
+        },
+        {
+          "field_name": "description",
+          "label": "Description"
+        },
+        {
+          "field_name": "url",
+          "label": "URL"
+        }
+      ]
     }
   ],
-  "resource_fields": [{
+  "resource_fields": [
+    {
       "field_name": "url",
       "label": "URL",
       "preset": "resource_url_upload"
     },
     {
-      "field_name": "name",
+      "field_name": "name_translated",
+      "preset": "fluent_core_translated",
       "label": "Name",
       "form_placeholder": "eg. January 2011 Gold Prices"
     },
     {
-      "field_name": "description",
+      "field_name": "description_translated",
+      "preset": "fluent_core_translated",
       "label": "Description",
       "form_snippet": "markdown.html",
       "form_placeholder": "Some useful notes about the data"
