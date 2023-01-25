@@ -1641,15 +1641,13 @@
       "field_name": "projects",
       "label": "Projects",
       "preset": "multiple_text",
-      "required": false,
-      "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_projects"
+      "required": false
     },
     {
       "field_name": "datacentre",
       "label": "Data Centre",
       "preset": "multiple_text",
-      "required": false,
-      "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_datacentre"
+      "required": false
     },
     {
       "field_name": "included_in_data_catalogue",
