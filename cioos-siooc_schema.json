@@ -35,6 +35,7 @@
     {
       "field_name": "notes_translated",
       "preset": "fluent_markdown",
+      "output_validators": "fluent_core_translated_output fluent_text_output",
       "label": "Description",
       "display_snippet": null,
       "required": true,
@@ -867,15 +868,67 @@
       "repeating_subfields": [{
           "field_name": "individual-name",
           "label": "Name",
+          "display_snippet": "uri_text.html",
+          "display_uri_field": "individual-uri_code",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
         },
         {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "display_snippet": null,
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "display_snippet": null,
+          "form_placeholder": "https://orcid.org/0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
           "field_name": "organisation-name",
           "label": "Affiliation",
+          "display_snippet": "uri_text.html",
+          "display_uri_field": "organisation-uri_code",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
+        },
+        {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "display_snippet": null,
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "display_snippet": null,
+          "form_placeholder": "https://ror.org/0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "display_snippet": null,
+          "form_placeholder": ""
         },
         {
           "field_name": "contact-info_online-resource",
@@ -984,15 +1037,67 @@
       "repeating_subfields": [{
           "field_name": "individual-name",
           "label": "Name",
+          "display_snippet": "uri_text.html",
+          "display_uri_field": "individual-uri_code",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
         },
         {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "display_snippet": null,
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "display_snippet": null,
+          "form_placeholder": "https://orcid.org/0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
           "field_name": "organisation-name",
           "label": "Affiliation",
+          "display_snippet": "uri_text.html",
+          "display_uri_field": "organisation-uri_code",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
+        },
+        {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "display_snippet": null,
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "display_snippet": null,
+          "form_placeholder": "https://ror.org/0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "display_snippet": null,
+          "form_placeholder": ""
         },
         {
           "field_name": "contact-info_online-resource",
@@ -1101,15 +1206,67 @@
       "repeating_subfields": [{
           "field_name": "individual-name",
           "label": "Name",
+          "display_snippet": "uri_text.html",
+          "display_uri_field": "individual-uri_code",
           "form_placeholder": "Joe Bloggs",
           "require_one": true,
           "hint": "name of individual"
         },
         {
+          "field_name": "individual-uri_authority",
+          "label": "Individual Identifier Authority",
+          "display_snippet": null,
+          "form_placeholder": "orcid.org"
+        },
+        {
+          "field_name": "individual-uri_code-space",
+          "label": "Individual Identifier Code Space",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "individual-uri_code",
+          "label": "Individual Identifier Code",
+          "display_snippet": null,
+          "form_placeholder": "https://orcid.org/0000-0002-1825-0097"
+        },
+        {
+          "field_name": "individual-uri_version",
+          "label": "Individual Identifier Version",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
           "field_name": "organisation-name",
           "label": "Affiliation",
+          "display_snippet": "uri_text.html",
+          "display_uri_field": "organisation-uri_code",
           "require_one": true,
           "hint": "name of orginization or affiliation if individual name is used"
+        },
+        {
+          "field_name": "organisation-uri_authority",
+          "label": "Organisation identifier Authority",
+          "display_snippet": null,
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "organisation-uri_code-space",
+          "label": "Organisation identifier Code Space",
+          "display_snippet": null,
+          "form_placeholder": ""
+        },
+        {
+          "field_name": "organisation-uri_code",
+          "label": "Organisation identifier Code",
+          "display_snippet": null,
+          "form_placeholder": "https://ror.org/0029jxk29"
+        },
+        {
+          "field_name": "organisation-uri_version",
+          "label": "Organisation identifier Version",
+          "display_snippet": null,
+          "form_placeholder": ""
         },
         {
           "field_name": "contact-info_online-resource",
@@ -1351,6 +1508,13 @@
       "validators": "ignore_missing int_validator",
       "form_placeholder": "9",
       "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
+    },
+    {
+      "field_name": "projects",
+      "label": "Projects",
+      "preset": "multiple_text",
+      "required": false,
+      "validators": "ignore_missing unicode scheming_multiple_text cioos_clean_and_populate_projects"
     }
   ],
   "resource_fields": [{
