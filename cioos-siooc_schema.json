@@ -521,19 +521,14 @@
       "help_text": "https://wiki.esipfed.org/MD_AssociatedResource",
       "repeating_subfields": [
         {
-          "field_name": "aggregate-dataset-identifier",
-          "label": "Parent or Linked Dataset",
-          "help_text": "Enter a dataset name or title",
-          "form_attrs": {
-            "data-module": "autocomplete",
-            "data-module-items": 5,
-            "data-module-interval": 500,
-            "data-module-source": "/api/3/action/package_autocomplete?q=?",
-            "data-module-key": "name",
-            "data-module-label": "title",
-            "data-module-class": "",
-            "class": ""
-          }
+          "field_name": "aggregate-dataset-name",
+          "label": "Parent or Linked Dataset Title"
+        },
+        {
+          "field_name": "aggregate-dataset-identifier_code",
+          "label": "Parent or Linked Dataset identifier",
+          "help_text": "Enter a dataset full URL or DOI",
+          "form_placeholder": "https://doi.org/10-3565/67890"
         },
         {
           "field_name": "initiative-type",
