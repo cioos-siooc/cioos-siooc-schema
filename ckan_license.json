@@ -361,13 +361,26 @@
     "domain_data": true,
     "domain_software": true,
     "family": "",
-    "id": "OGL-HLT",
+    "id": "OGL-HALTON",
     "maintainer": "Conservation Halton",
     "od_conformance": "rejected",
     "osd_conformance": "not reviewed",
     "status": "active",
     "title": "Open Government Licence (Conservation Halton)",
     "url": "https://gis.conservationhalton.net/doc/OpenDataHub/Conservation_Halton_Open_Government_Licence.pdf"
+  },
+  {
+    "domain_content": true,
+    "domain_data": true,
+    "domain_software": true,
+    "family": "",
+    "id": "OGL-CALGARY",
+    "maintainer": "City of Calgary",
+    "od_conformance": "rejected",
+    "osd_conformance": "not reviewed",
+    "status": "active",
+    "title": "Open Government Licence (City of Calgary)",
+    "url": "https://data.calgary.ca/stories/s/u45n-7awa"
   },
   {
     "domain_content": true,
