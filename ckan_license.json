@@ -667,5 +667,22 @@
     "domain_content": true,
     "domain_software": false,
     "id": "nwt-tno"
+  },
+  {
+    "status": "active",
+    "maintainer": "",
+    "od_conformance": "",
+    "family": "",
+    "title": "Environment and Climate Change Canada Data Servers End-use Licence",
+    "domain_data": true,
+    "is_okd_compliant": false,
+    "osd_conformance": "",
+    "url": "https://eccc-msc.github.io/open-data/licence/readme_en/",
+    "url_fr": "https://eccc-msc.github.io/open-data/licence/readme_fr/",
+    "title_fr": "Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada",
+    "is_osi_compliant": false,
+    "domain_content": true,
+    "domain_software": false,
+    "id": "ca-eccc-odl"
   }
 ]
