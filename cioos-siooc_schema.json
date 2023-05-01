@@ -24,6 +24,13 @@
       }
     },
     {
+      "field_name": "title_translation_method",
+      "preset": "fluent_text",
+      "display_snippet": null,
+      "required": false,
+      "label": "Title Translation Method"
+    },
+    {
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
@@ -46,6 +53,13 @@
       }
     },
     {
+      "field_name": "notes_translation_method",
+      "preset": "fluent_text",
+      "display_snippet": null,
+      "required": false,
+      "label": "Notes Translation Method"
+    },
+    {
       "field_name": "keywords",
       "preset": "fluent_tags",
       "display_snippet": null,
@@ -59,6 +73,13 @@
         "fr": "p. ex. économie, santé mentale, gouvernement",
         "en": "eg. economy, mental health, government"
       }
+    },
+    {
+      "field_name": "keywords_translation_method",
+      "preset": "fluent_text",
+      "display_snippet": null,
+      "required": false,
+      "label": "Keywords Translation Method"
     },
     {
       "field_name": "eov",
