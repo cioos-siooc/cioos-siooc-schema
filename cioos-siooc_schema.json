@@ -1734,7 +1734,6 @@
     {
       "field_name": "included_in_data_catalogue",
       "label": "Included in Data Catalogue",
-      "display_snippet": null,
       "help_text": "Catalogues containing this dataset",
       "form_blanks": 1,
       "repeating_subfields": [
