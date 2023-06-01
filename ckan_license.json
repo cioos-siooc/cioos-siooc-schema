@@ -214,6 +214,10 @@
     "domain_software": true,
     "family": "",
     "id": "OGL-CAN-2.0",
+    "legacy_ids": [
+      "government-open-license-canada",
+      "https://open.canada.ca/en/open-government-licence-canada."
+    ],
     "maintainer": "Canadian Government",
     "od_conformance": "rejected",
     "osd_conformance": "not reviewed",
