@@ -283,6 +283,9 @@
     "domain_software": true,
     "family": "",
     "id": "OGL-NL-2.0",
+    "legacy_ids": [
+      "government-open-license-newfoundland"
+    ],
     "maintainer": "Newfoundland and Labrador Government",
     "od_conformance": "rejected",
     "osd_conformance": "not reviewed",
