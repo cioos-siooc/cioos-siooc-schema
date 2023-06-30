@@ -1492,6 +1492,7 @@
       "display_snippet": null,
       "help_text": "All individuals and organizations who disseminate copies of the resource in either electronic or print form",
       "required": false,
+      "display_snippet": null,
       "form_blanks": 1,
       "repeating_subfields": [
         {
