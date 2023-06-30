@@ -444,7 +444,556 @@
         }
       ]
     },
+{
+  "field_name": "ecv",
+  "label": " Variables",
+  "preset": "multiple_select",
+  "required": false,
+  "validators": "scheming_multiple_choice cioos_clean_and_populate_ecvs",
+  "choices": [
     {
+      "category": "Atmosphere",
+      "subcategory": "Surface",
+      "value": "precipitation",
+      "label": {
+        "en": "Precipitation",
+        "fr": "Précipitation"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Surface",
+      "value": "pressure_surface",
+      "label": {
+        "en": "Pressure (surface)",
+        "fr": "Pression (superficielle)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Surface",
+      "value": "surface_radiation_budget",
+      "label": {
+        "en": "Surface Radiation Budget",
+        "fr": "Budget de rayonnement de surface"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Surface",
+      "value": "surface_wind_speed_and_direction",
+      "label": {
+        "en": "Surface Wind Speed and direction",
+        "fr": "Vitesse et direction du vent de surface"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Surface",
+      "value": "temperature_surface",
+      "label": {
+        "en": "Temperature (surface)",
+        "fr": "Température (surface)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Surface",
+      "value": "water_vapour_surface",
+      "label": {
+        "en": "Water Vapour (surface)",
+        "fr": "Vapeur d'eau (surface)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Upper Atmosphere",
+      "value": "earth_radiation_budget",
+      "label": {
+        "en": "Earth Radiation Budget",
+        "fr": "Bilan radiatif de la Terre"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Upper Atmosphere",
+      "value": "lightning",
+      "label": {
+        "en": "Lightning",
+        "fr": "Foudre"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Upper Atmosphere",
+      "value": "temperature_upper-air",
+      "label": {
+        "en": "Temperature (upper-air) ",
+        "fr": "Température (en altitude)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Upper Atmosphere",
+      "value": "water_vapour_upper_air",
+      "label": {
+        "en": "Water Vapour (upper air)",
+        "fr": "Vapeur d'eau (air supérieur)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": "Upper Atmosphere",
+      "value": "wind_speed_and_direction_upper-air",
+      "label": {
+        "en": "Wind speed and direction (upper-air) ",
+        "fr": "Vitesse et direction du vent (en altitude)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": " Atmospheric Composition",
+      "value": "aerosols_properties",
+      "label": {
+        "en": "Aerosols properties ",
+        "fr": "Propriétés des aérosols"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": " Atmospheric Composition",
+      "value": "carbon_dioxide,_methane_and_other_greenhouse_gases",
+      "label": {
+        "en": "Carbon Dioxide, Methane and other Greenhouse gases   ",
+        "fr": "Dioxyde de carbone, méthane et autres gaz à effet de serre"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": " Atmospheric Composition",
+      "value": "cloud_properties",
+      "label": {
+        "en": "Cloud Properties",
+        "fr": "Propriétés du nuage"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": " Atmospheric Composition",
+      "value": "ozone",
+      "label": {
+        "en": "Ozone",
+        "fr": "Ozone"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Atmosphere",
+      "subcategory": " Atmospheric Composition",
+      "value": "precursors_supporting_the_aerosol_and_ozone_ecvs",
+      "label": {
+        "en": "Precursors (supporting the Aerosol and Ozone ECVs)",
+        "fr": "Précurseurs (supportant les ECV Aérosol et Ozone)"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Hydrosphere",
+      "value": "river_discharge",
+      "label": {
+        "en": "River Discharge",
+        "fr": "Débit fluvial"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Hydrosphere",
+      "value": "groundwater",
+      "label": {
+        "en": "Groundwater",
+        "fr": "Eaux souterraines"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Hydrosphere",
+      "value": "lakes",
+      "label": {
+        "en": "Lakes",
+        "fr": "des lacs"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Hydrosphere",
+      "value": "soil_moisture",
+      "label": {
+        "en": "Soil Moisture",
+        "fr": "Humidité du sol"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Cryosphere",
+      "value": "snow",
+      "label": {
+        "en": "Snow ",
+        "fr": "Neige"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Cryosphere",
+      "value": "glaciers",
+      "label": {
+        "en": "Glaciers",
+        "fr": "Glaciers"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Cryosphere",
+      "value": "ice_sheets_and_ice_shelves",
+      "label": {
+        "en": "Ice Sheets and ice shelves",
+        "fr": "Inlandsis et banquises"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Cryosphere",
+      "value": "permafrost",
+      "label": {
+        "en": "Permafrost",
+        "fr": "Pergélisol"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "albedo",
+      "label": {
+        "en": "Albedo",
+        "fr": "Albédo"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "land_cover",
+      "label": {
+        "en": "Land cover",
+        "fr": "Couverture terrestre"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "fraction_of_absorbed_photosynthetically_active_radiation",
+      "label": {
+        "en": "Fraction of Absorbed Photosynthetically Active Radiation",
+        "fr": "Fraction de rayonnement photosynthétiquement actif absorbé"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "leaf_area_index_lai",
+      "label": {
+        "en": "Leaf Area Index",
+        "fr": "Indice de surface foliaire"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "above-ground_biomass",
+      "label": {
+        "en": "Above-ground biomass",
+        "fr": "Biomasse aérienne"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "soil_carbon",
+      "label": {
+        "en": "Soil Carbon",
+        "fr": "Carbone du sol"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "land_surface_temperature",
+      "label": {
+        "en": "Land Surface Temperature",
+        "fr": "Température de surface terrestre"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "fire",
+      "label": {
+        "en": "Fire ",
+        "fr": "Feu"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Biosphere",
+      "value": "evaporation_from_land",
+      "label": {
+        "en": "Evaporation from land",
+        "fr": "Évaporation de la terre"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Anthroposphere",
+      "value": "anthropogenic_greenhouse_gas_fluxes",
+      "label": {
+        "en": "Anthropogenic Greenhouse Gas Fluxes",
+        "fr": "Flux de gaz à effet de serre anthropiques"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Land",
+      "subcategory": "Anthroposphere",
+      "value": "anthropogenic_water_use",
+      "label": {
+        "en": "Anthropogenic Water Use",
+        "fr": "Utilisation anthropique de l'eau"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "ocean_surface_heat_flux",
+      "label": {
+        "en": "Ocean Surface Heat Flux",
+        "fr": "Flux de chaleur à la surface de l'océan"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "sea_ice",
+      "label": {
+        "en": "Sea Ice",
+        "fr": "Glace de mer"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "sea_level",
+      "label": {
+        "en": "Sea Level",
+        "fr": "Niveau de la mer"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "sea_state",
+      "label": {
+        "en": "Sea State",
+        "fr": "État de la mer"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "sea_surface_salinity",
+      "label": {
+        "en": "Sea Surface Salinity",
+        "fr": "Salinité de la surface de la mer"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "sea_surface_temperature",
+      "label": {
+        "en": "Sea Surface Temperature",
+        "fr": "Température de surface de la mer"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "subsurface_curents",
+      "label": {
+        "en": "Subsurface Curents",
+        "fr": "Courants souterrains"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "subsurface_salinity",
+      "label": {
+        "en": "Subsurface Salinity",
+        "fr": "Salinité souterraine"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "subsurface_temperature",
+      "label": {
+        "en": "Subsurface Temperature",
+        "fr": "Température du sous-sol"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "surface_currents",
+      "label": {
+        "en": "Surface Currents",
+        "fr": "Courants de surface"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Physical",
+      "value": "surface_stress",
+      "label": {
+        "en": "Surface Stress",
+        "fr": "Contraintes superficielles"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biogechemical",
+      "value": "inorganic_carbon",
+      "label": {
+        "en": "Inorganic Carbon",
+        "fr": "Carbone inorganique"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biogechemical",
+      "value": "nitrous_oxide",
+      "label": {
+        "en": "Nitrous Oxide",
+        "fr": "Protoxyde d'azote"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biogechemical",
+      "value": "nutrients",
+      "label": {
+        "en": "Nutrients",
+        "fr": "Nutriments"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biogechemical",
+      "value": "ocean_colour",
+      "label": {
+        "en": "Ocean Colour",
+        "fr": "Couleur de l'océan"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biogechemical",
+      "value": "oxygen",
+      "label": {
+        "en": "Oxygen",
+        "fr": "Oxygène"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biogechemical",
+      "value": "transient_tracers",
+      "label": {
+        "en": "Transient Tracers",
+        "fr": "Traceurs transitoires"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biological/Ecosystems",
+      "value": "marine_habitat_properties",
+      "label": {
+        "en": "Marine Habitat Properties",
+        "fr": "Propriétés de l'habitat marin"
+      },
+      "icon": "na.svg"
+    },
+    {
+      "category": "Ocean",
+      "subcategory": "Biological/Ecosystems",
+      "value": "plankton",
+      "label": {
+        "en": "Plankton",
+        "fr": "Plancton"
+      },
+      "icon": "na.svg"
+    }
+  ]
+},
+{
       "field_name": "citation",
       "preset": "fluent_markdown",
       "display_snippet": null,
