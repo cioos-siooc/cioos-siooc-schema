@@ -260,6 +260,15 @@
           "icon": "ocean-surface-heat-flux.svg"
         },
         {
+          "category": "Physical",
+          "value": "oceanBottomPressure",
+          "label": {
+            "en": "Ocean Bottom Pressure",
+            "fr": "Pression au fond de l'océan"
+          },
+          "icon": "ocean-bottom-pressure.svg"
+        },
+        {
           "category": "BioEcosystems",
           "value": "phytoplanktonBiomassAndDiversity",
           "label": {
