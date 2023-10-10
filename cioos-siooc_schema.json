@@ -209,28 +209,40 @@
           "category": "Physical",
           "value": "subSurfaceCurrents",
           "label": {
-            "en": "Sub Surface Currents",
+            "en": "Subsurface Currents",
             "fr": "Courants sous la surface"
           },
-          "icon": "subsurface-currents.svg"
+          "icon": "subsurface-currents.svg",
+          "alternative_ids": [
+            "subsurface currents",
+            "sub surface currents"
+          ]
         },
         {
           "category": "Physical",
           "value": "subSurfaceSalinity",
           "label": {
-            "en": "Sub Surface Salinity",
+            "en": "Subsurface Salinity",
             "fr": "Salinité sous la surface"
           },
-          "icon": "subsurface-salinity.svg"
+          "icon": "subsurface-salinity.svg",
+          "alternative_ids": [
+            "subsurface salinity",
+            "sub surface salinity"
+          ]
         },
         {
           "category": "Physical",
           "value": "subSurfaceTemperature",
           "label": {
-            "en": "Sub Surface Temperature",
+            "en": "Subsurface Temperature",
             "fr": "Température sous la surface"
           },
-          "icon": "subsurface-temperature.svg"
+          "icon": "subsurface-temperature.svg",
+          "alternative_ids": [
+            "subsurface temperature",
+            "sub surface temperature"
+          ]
         },
         {
           "category": "Physical",
