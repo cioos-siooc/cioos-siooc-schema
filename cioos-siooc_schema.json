@@ -116,69 +116,6 @@
           "icon": "nutrients.svg"
         },
         {
-          "category": "Physical",
-          "value": "seawaterDensity",
-          "label": {
-            "en": "Seawater Density",
-            "fr": "Seawater Density"
-          },
-          "icon": "density.svg"
-        },
-        {
-          "category": "Physical",
-          "value": "potentialTemperature",
-          "label": {
-            "en": "Potential Temperature",
-            "fr": "Potential Temperature"
-          },
-          "icon": "temperature.svg"
-        },
-        {
-          "category": "Physical",
-          "value": "potentialDensity",
-          "label": {
-            "en": "Potential Density",
-            "fr": "Potential Density"
-          },
-          "icon": "density.svg"
-        },
-        {
-          "category": "Physical",
-          "value": "speedOfSound",
-          "label": {
-            "en": "Speed of Sound",
-            "fr": "Speed of Sound"
-          },
-          "icon": "speed-of-sound.svg"
-        },
-        {
-          "category": "Biogeochemical",
-          "value": "nitrate",
-          "label": {
-            "en": "Nitrate",
-            "fr": "Nitrate"
-          },
-          "icon": "nitrate.svg"
-        },
-        {
-          "category": "Biogeochemical",
-          "value": "phosphate",
-          "label": {
-            "en": "Phosphate",
-            "fr": "Phosphate"
-          },
-          "icon": "phosphate.svg"
-        },
-        {
-          "category": "Biogeochemical",
-          "value": "silicate",
-          "label": {
-            "en": "Silicate",
-            "fr": "Silicate"
-          },
-          "icon": "silicate.svg"
-        },
-        {
           "category": "Biogeochemical",
           "value": "inorganicCarbon",
           "label": {
@@ -272,28 +209,40 @@
           "category": "Physical",
           "value": "subSurfaceCurrents",
           "label": {
-            "en": "Sub Surface Currents",
+            "en": "Subsurface Currents",
             "fr": "Courants sous la surface"
           },
-          "icon": "subsurface-currents.svg"
+          "icon": "subsurface-currents.svg",
+          "alternative_ids": [
+            "subsurface currents",
+            "sub surface currents"
+          ]
         },
         {
           "category": "Physical",
           "value": "subSurfaceSalinity",
           "label": {
-            "en": "Sub Surface Salinity",
+            "en": "Subsurface Salinity",
             "fr": "Salinité sous la surface"
           },
-          "icon": "subsurface-salinity.svg"
+          "icon": "subsurface-salinity.svg",
+          "alternative_ids": [
+            "subsurface salinity",
+            "sub surface salinity"
+          ]
         },
         {
           "category": "Physical",
           "value": "subSurfaceTemperature",
           "label": {
-            "en": "Sub Surface Temperature",
+            "en": "Subsurface Temperature",
             "fr": "Température sous la surface"
           },
-          "icon": "subsurface-temperature.svg"
+          "icon": "subsurface-temperature.svg",
+          "alternative_ids": [
+            "subsurface temperature",
+            "sub surface temperature"
+          ]
         },
         {
           "category": "Physical",
@@ -321,6 +270,15 @@
             "fr": "Flux de chaleur océanique de surface"
           },
           "icon": "ocean-surface-heat-flux.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "oceanBottomPressure",
+          "label": {
+            "en": "Ocean Bottom Pressure",
+            "fr": "Pression au fond de l'océan"
+          },
+          "icon": "ocean-bottom-pressure.svg"
         },
         {
           "category": "BioEcosystems",
