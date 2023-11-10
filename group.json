@@ -1,8 +1,12 @@
 {
   "scheming_version": 1,
-  "organization_type": "organization",
+  "group_type": "resorg",
+  "about": "An initial implementation of the responsible organization group schema. This should allow linking multiple orgs to one dataset",
   "about_url": "http://github.com/ckan/ckanext-scheming",
-  "form_languages": ["fr", "en"],
+  "form_languages": [
+    "fr",
+    "en"
+  ],
   "fields": [
     {
       "field_name": "title_translated",
@@ -12,10 +16,12 @@
         "fr": "Titre",
         "en": "Title"
       },
-      "form_attrs": {"data-module": "slug-preview-target"},
+      "form_attrs": {
+        "data-module": "slug-preview-target"
+      },
       "form_placeholder": {
-        "fr": "Mon organisation",
-        "en": "My Organization"
+        "fr": "Mon groupe",
+        "en": "My Group"
       }
     },
     {
@@ -27,46 +33,46 @@
       "form_attrs": {
         "data-module": "slug-preview-slug"
       },
-      "form_placeholder": "my-organization"
+      "form_placeholder": "my-group"
     },
     {
-       "field_name": "organization-uri",
-       "label": "Organization identifier",
-       "display_snippet": null,
-       "simple_subfields": [
-         {
-           "field_name": "authority",
-           "label": "Authority",
-           "display_snippet": null,
-           "form_placeholder": "ROR"
-         },
-         {
-           "field_name": "code-space",
-           "label": "Code Space",
-           "display_snippet": null,
-           "form_placeholder": "ror.org"
-         },
-         {
-           "field_name": "code",
-           "label": "Code",
-           "display_snippet": null,
-           "form_placeholder": "https://ror.org/0029jxk29"
-         },
-         {
-           "field_name": "version",
-           "display_snippet": null,
-           "label": "Version"
-         }
-       ]
-     },
+      "field_name": "group-uri",
+      "label": "Group identifier",
+      "display_snippet": null,
+      "simple_subfields": [
+        {
+          "field_name": "authority",
+          "label": "Authority",
+          "display_snippet": null,
+          "form_placeholder": "ROR"
+        },
+        {
+          "field_name": "code-space",
+          "label": "Code Space",
+          "display_snippet": null,
+          "form_placeholder": "ror.org"
+        },
+        {
+          "field_name": "code",
+          "label": "Code",
+          "display_snippet": null,
+          "form_placeholder": "https://ror.org/0029jxk29"
+        },
+        {
+          "field_name": "version",
+          "display_snippet": null,
+          "label": "Version"
+        }
+      ]
+    },
     {
       "field_name": "description_translated",
       "preset": "fluent_markdown",
       "display_snippet": "fluent_text.html",
       "label": "Description",
       "form_placeholder": {
-        "fr": "Quelques informations à propos de mon organisation...",
-        "en": "A little information about my organization..."
+        "fr": "Quelques informations à propos de mon groupe...",
+        "en": "A little information about my group..."
       }
     },
     {
