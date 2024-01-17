@@ -2269,14 +2269,21 @@
       "field_name": "name_translated",
       "preset": "fluent_core_translated",
       "label": "Name",
-      "form_placeholder": "eg. January 2011 Gold Prices"
+      "form_placeholder": {
+        "fr": "p. ex. Un nom descriptif pour la ressource",
+        "en": "eg. A descriptive name for the resource"
+      }
     },
     {
       "field_name": "description_translated",
-      "preset": "fluent_core_translated",
+      "preset": "fluent_markdown",
+      "output_validators": "fluent_core_translated_output fluent_text_output",
       "label": "Description",
-      "form_snippet": "markdown.html",
-      "form_placeholder": "Some useful notes about the data"
+
+      "form_placeholder": {
+        "fr": "Quelques notes utiles sur les données",
+        "en": "Some useful notes about the data"
+      }
     },
     {
       "field_name": "format",
