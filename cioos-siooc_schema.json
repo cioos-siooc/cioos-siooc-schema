@@ -83,21 +83,311 @@
     },
     {
       "field_name": "mapp-theme",
-      "preset": "tag_string_autocomplete",
+      "preset": "select",
       "required": false,
-      "label": "Theme"
+      "label": "Theme",
+      "choices": [
+        {
+          "value": "Administrative Areas",
+          "label": "Administrative Areas"
+        },
+        {
+          "value": "Climate Change and Adaptive Management",
+          "label": "Climate Change and Adaptive Management"
+        },
+        {
+          "value": "Collaboration and Governance",
+          "label": "Collaboration and Governance"
+        },
+        {
+          "value": "MaPP Analyses",
+          "label": "MaPP Analyses"
+        },
+        {
+          "value": "MaPP Planning",
+          "label": "MaPP Planning"
+        },
+        {
+          "value": "Marine Environment",
+          "label": "Marine Environment"
+        },
+        {
+          "value": "Stewardship, Monitoring and Enforcement",
+          "label": "Stewardship, Monitoring and Enforcement"
+        },
+        {
+          "value": "Sustainable Economic Development and Healthy Communities",
+          "label": "Sustainable Economic Development and Healthy Communities"
+        },
+        {
+          "value": "Uses and Activities",
+          "label": "Uses and Activities"
+        },
+        {
+          "value": "Other",
+          "label": "Other"
+        }
+      ]
     },
     {
       "field_name": "mapp-sub-theme",
-      "preset": "tag_string_autocomplete",
+      "preset": "select",
       "required": false,
-      "label": "Sub Theme"
+      "label": "Sub Theme",
+      "choices": [
+        {
+          "value": "Boundaries and Areas",
+          "label": "Boundaries and Areas"
+        },
+        {
+          "value": "Marine Protections",
+          "label": "Marine Protections"
+        },
+        {
+          "value": "Uses and Tenures",
+          "label": "Uses and Tenures"
+        },
+        {
+          "value": "Climate Change",
+          "label": "Climate Change"
+        },
+        {
+          "value": "Governance",
+          "label": "Governance"
+        },
+        {
+          "value": "Marine Planning",
+          "label": "Marine Planning"
+        },
+        {
+          "value": "Ecoadapt",
+          "label": "Ecoadapt"
+        },
+        {
+          "value": "Marine InVEST Recreation",
+          "label": "Marine InVEST Recreation"
+        },
+        {
+          "value": "Marxan High Priority Conservation Areas",
+          "label": "Marxan High Priority Conservation Areas"
+        },
+        {
+          "value": "Central Coast Marine Spatial Plan",
+          "label": "Central Coast Marine Spatial Plan"
+        },
+        {
+          "value": "Haida Gwaii Marine Spatial Plan",
+          "label": "Haida Gwaii Marine Spatial Plan"
+        },
+        {
+          "value": "Marine Energy",
+          "label": "Marine Energy"
+        },
+        {
+          "value": "North Coast Marine Spatial Plan",
+          "label": "North Coast Marine Spatial Plan"
+        },
+        {
+          "value": "Vancouver Island Marine Spatial Plan",
+          "label": "Vancouver Island Marine Spatial Plan"
+        },
+        {
+          "value": "Algae and Plants",
+          "label": "Algae and Plants"
+        },
+        {
+          "value": "Aquaculture",
+          "label": "Aquaculture"
+        },
+        {
+          "value": "Aquaculture Marketing Information",
+          "label": "Aquaculture Marketing Information"
+        },
+        {
+          "value": "Bathymetry",
+          "label": "Bathymetry"
+        },
+        {
+          "value": "Bioregional Classifications",
+          "label": "Bioregional Classifications"
+        },
+        {
+          "value": "Birds",
+          "label": "Birds"
+        },
+        {
+          "value": "Fish",
+          "label": "Fish"
+        },
+        {
+          "value": "Hydrology",
+          "label": "Hydrology"
+        },
+        {
+          "value": "Invertebrates",
+          "label": "Invertebrates"
+        },
+        {
+          "value": "Mammals",
+          "label": "Mammals"
+        },
+        {
+          "value": "Marine Ecology",
+          "label": "Marine Ecology"
+        },
+        {
+          "value": "Physical Oceanography",
+          "label": "Physical Oceanography"
+        },
+        {
+          "value": "Reptiles",
+          "label": "Reptiles"
+        },
+        {
+          "value": "Communications of Archaeological Sites",
+          "label": "Communications of Archaeological Sites"
+        },
+        {
+          "value": "Compliance and Enforcement",
+          "label": "Compliance and Enforcement"
+        },
+        {
+          "value": "Cultural and Heritage Resources",
+          "label": "Cultural and Heritage Resources"
+        },
+        {
+          "value": "Cumulative Effects",
+          "label": "Cumulative Effects"
+        },
+        {
+          "value": "Geographic Response Planning",
+          "label": "Geographic Response Planning"
+        },
+        {
+          "value": "Guardian Funding Opportunities",
+          "label": "Guardian Funding Opportunities"
+        },
+        {
+          "value": "Guardian Program Opportunities",
+          "label": "Guardian Program Opportunities"
+        },
+        {
+          "value": "Indicator Monitoring",
+          "label": "Indicator Monitoring"
+        },
+        {
+          "value": "Indicator Monitoring and PMZs",
+          "label": "Indicator Monitoring and PMZs"
+        },
+        {
+          "value": "Marine Response",
+          "label": "Marine Response"
+        },
+        {
+          "value": "Cultural Continuity and Connections",
+          "label": "Cultural Continuity and Connections"
+        },
+        {
+          "value": "Economic Development",
+          "label": "Economic Development"
+        },
+        {
+          "value": "Polluted Areas Restoration",
+          "label": "Polluted Areas Restoration"
+        },
+        {
+          "value": "Shellfish Aquaculture",
+          "label": "Shellfish Aquaculture"
+        },
+        {
+          "value": "Tourism and Recreation",
+          "label": "Tourism and Recreation"
+        },
+        {
+          "value": "Aquaculture",
+          "label": "Aquaculture"
+        },
+        {
+          "value": "Commercial Tourism",
+          "label": "Commercial Tourism"
+        },
+        {
+          "value": "Fisheries",
+          "label": "Fisheries"
+        },
+        {
+          "value": "Infrastructure",
+          "label": "Infrastructure"
+        },
+        {
+          "value": "Log Handling and Storage Sites",
+          "label": "Log Handling and Storage Sites"
+        },
+        {
+          "value": "Marine and Tourism Recreation",
+          "label": "Marine and Tourism Recreation"
+        },
+        {
+          "value": "Marine Pollution",
+          "label": "Marine Pollution"
+        },
+        {
+          "value": "Marine Renewable Energy",
+          "label": "Marine Renewable Energy"
+        },
+        {
+          "value": "Mining, Oil and Gas",
+          "label": "Mining, Oil and Gas"
+        },
+        {
+          "value": "Public Recreation",
+          "label": "Public Recreation"
+        },
+        {
+          "value": "Shipping and Transportation",
+          "label": "Shipping and Transportation"
+        },
+        {
+          "value": "Other",
+          "label": "Other"
+        }
+      ]
     },
     {
       "field_name": "mapp-sub-region",
-      "preset": "tag_string_autocomplete",
+      "preset": "select",
       "required": false,
-      "label": "Region"
+      "label": "Region",
+      "choices": [
+        {
+          "value": "British Columbia",
+          "label": "British Columbia"
+        },
+        {
+          "value": "Central Coast Sub-Region",
+          "label": "Central Coast Sub-Region"
+        },
+        {
+          "value": "Haida Gwaii Sub-Region",
+          "label": "Haida Gwaii Sub-Region"
+        },
+        {
+          "value": "MaPP Study Area",
+          "label": "MaPP Study Area"
+        },
+        {
+          "value": "North Coast Sub-Region",
+          "label": "North Coast Sub-Region"
+        },
+        {
+          "value": "North Vancouver Island Sub-Region",
+          "label": "North Vancouver Island Sub-Region"
+        },
+        {
+          "value": "Pacific North Coast Integrated Management Area",
+          "label": "Pacific North Coast Integrated Management Area"
+        }
+      ]
     },
     {
       "field_name": "mapp-project",
