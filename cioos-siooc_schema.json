@@ -83,7 +83,7 @@
     },
     {
       "field_name": "mapp-theme",
-      "preset": "select",
+      "preset": "multiple_select",
       "required": false,
       "label": "Theme",
       "choices": [
@@ -131,7 +131,7 @@
     },
     {
       "field_name": "mapp-sub-theme",
-      "preset": "select",
+      "preset": "multiple_select",
       "required": false,
       "label": "Sub Theme",
       "choices": [
@@ -355,7 +355,7 @@
     },
     {
       "field_name": "mapp-sub-region",
-      "preset": "select",
+      "preset": "multiple_select",
       "required": false,
       "label": "Region",
       "choices": [
