@@ -2395,6 +2395,7 @@
       "field_name": "spatial",
       "preset": "json_object",
       "label": "Spatial Extent",
+      "display_snippet": null,
       "form_snippet": "spatial.html"
     },
     {
