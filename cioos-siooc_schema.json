@@ -1477,10 +1477,12 @@
       "field_name": "aggregation-info",
       "label": "Associated Datasets",
       "form_blanks": 1,
+      "display_snippet": null,
       "help_text": "https://wiki.esipfed.org/MD_AssociatedResource",
       "repeating_subfields": [
         {
           "field_name": "aggregate-dataset-name",
+          "preset": "fluent_text",
           "label": "Parent or Linked Dataset Title"
         },
         {
@@ -2507,6 +2509,72 @@
       ]
     },
     {
+      "field_name": "lineage",
+      "label": "Lineage",
+      "help_text": "https://wiki.esipfed.org/LI_Lineage",
+      "form_snippet": null,
+      "display_snippet": null,
+      "repeating_subfields": [
+        {
+          "field_name": "statment",
+          "preset": "fluent_text",
+          "label": "Statment"
+        },
+        {
+          "field_name": "scope",
+          "label": "Scope",
+          "help_text": "https://wiki.esipfed.org/ISO_19115-3_Codelists#MD_ScopeCode",
+          "preset": "select",
+          "choices": [
+            {
+              "value": "collectionSession",
+              "label": "Collection Session"
+            },
+            {
+              "value": "dataset",
+              "label": "dataset"
+            },
+            {
+              "value": "document",
+              "label": "document"
+            },
+            {
+              "value": "model",
+              "label": "model"
+            },
+            {
+              "value": "software",
+              "label": "software"
+            }
+          ]
+        },
+        {
+          "field_name": "additional-documentation",
+          "label": "Additional Documentation",
+          "form_snippet": "multiple_text.html",
+          "display_snippet": "lineage_item.html",
+          "validators": "scheming_multiple_text",
+          "output_validators": "scheming_load_json"
+        },
+        {
+          "field_name": "source",
+          "label": "Source",
+          "form_snippet": "multiple_text.html",
+          "display_snippet": "lineage_item.html",
+          "validators": "scheming_multiple_text",
+          "output_validators": "scheming_load_json"
+        },
+        {
+          "field_name": "processing-step",
+          "label": "Processing Step",
+          "form_snippet": "multiple_text.html",
+          "display_snippet": "lineage_item.html",
+          "validators": "scheming_multiple_text",
+          "output_validators": "scheming_load_json"
+        }
+      ]
+    },
+    {
       "field_name": "xml_location_url",
       "label": "XML Metadata File Location",
       "form_placeholder": "http://waf/location/xml_metadata_file.xml",
@@ -2584,14 +2652,21 @@
       "field_name": "name_translated",
       "preset": "fluent_core_translated",
       "label": "Name",
-      "form_placeholder": "eg. January 2011 Gold Prices"
+      "form_placeholder": {
+        "fr": "p. ex. Un nom descriptif pour la ressource",
+        "en": "eg. A descriptive name for the resource"
+      }
     },
     {
       "field_name": "description_translated",
-      "preset": "fluent_core_translated",
+      "preset": "fluent_markdown",
+      "output_validators": "fluent_core_translated_output fluent_text_output",
       "label": "Description",
-      "form_snippet": "markdown.html",
-      "form_placeholder": "Some useful notes about the data"
+
+      "form_placeholder": {
+        "fr": "Quelques notes utiles sur les données",
+        "en": "Some useful notes about the data"
+      }
     },
     {
       "field_name": "format",

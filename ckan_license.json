@@ -908,6 +908,9 @@
     "od_conformance": "",
     "family": "",
     "title": "Open Government Licence - Canada",
+    "legacy_ids": [
+      "Open Government Licence - Canada (http://open.canada.ca/en/open-government-licence-canada)"
+    ],
     "domain_data": true,
     "is_okd_compliant": false,
     "osd_conformance": "",
