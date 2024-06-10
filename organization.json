@@ -21,7 +21,7 @@
     {
       "field_name": "name",
       "label": "URL",
-      "validators": "not_empty unicode name_validator group_name_validator",
+      "validators": "not_empty unicode cioos_name_validator group_name_validator",
       "preset": "dataset_slug",
       "display_snippet": null,
       "form_attrs": {
