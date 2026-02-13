@@ -21,7 +21,7 @@
     {
       "field_name": "name",
       "label": "URL",
-      "validators": "not_empty unicode cioos_name_validator group_name_validator",
+      "validators": "not_empty unicode_safe cioos_name_validator",
       "preset": "dataset_slug",
       "display_snippet": null,
       "form_attrs": {
@@ -32,8 +32,7 @@
     {
        "field_name": "organization-uri",
        "label": "Organization identifier",
-       "display_snippet": null,
-       "simple_subfields": [
+       "repeating_subfields": [
          {
            "field_name": "authority",
            "label": "Authority",

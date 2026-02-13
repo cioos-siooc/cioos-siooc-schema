@@ -2108,7 +2108,7 @@
     {
       "field_name": "temporal-extent",
       "label": "Temporal Extent",
-      "simple_subfields": [
+      "repeating_subfields": [
         {
           "field_name": "begin",
           "label": "Begin",
@@ -2132,7 +2132,7 @@
     {
       "field_name": "vertical-extent",
       "label": "Vertical Extent",
-      "simple_subfields": [
+      "repeating_subfields": [
         {
           "field_name": "min",
           "label": "Min",
@@ -2170,7 +2170,7 @@
       "field_name": "unique-resource-identifier-full",
       "label": "Citation identifier",
       "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
-      "simple_subfields": [
+      "repeating_subfields": [
         {
           "field_name": "authority",
           "label": "Authority",
