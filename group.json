@@ -1,5 +1,5 @@
 {
-  "scheming_version": 1,
+  "scheming_version": 2,
   "group_type": "resorg",
   "about": "An initial implementation of the responsible organization group schema. This should allow linking multiple orgs to one dataset",
   "about_url": "http://github.com/ckan/ckanext-scheming",
