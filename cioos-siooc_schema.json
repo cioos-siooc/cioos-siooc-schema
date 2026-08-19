@@ -215,7 +215,8 @@
           "icon": "subsurface-currents.svg",
           "alternative_ids": [
             "subsurface currents",
-            "sub surface currents"
+            "sub surface currents",
+            "sub-surface currents"
           ]
         },
         {
@@ -228,7 +229,8 @@
           "icon": "subsurface-salinity.svg",
           "alternative_ids": [
             "subsurface salinity",
-            "sub surface salinity"
+            "sub surface salinity",
+            "sub-surface salinity"
           ]
         },
         {
@@ -241,7 +243,8 @@
           "icon": "subsurface-temperature.svg",
           "alternative_ids": [
             "subsurface temperature",
-            "sub surface temperature"
+            "sub surface temperature",
+            "sub-surface temperature"
           ]
         },
         {
