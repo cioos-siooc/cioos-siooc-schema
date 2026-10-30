@@ -2175,6 +2175,7 @@
     {
       "field_name": "unique-resource-identifier-full",
       "label": "Citation identifier",
+      "display_snippet": "citation_identifier.html",
       "help_text": "If usind a doi url place the while url in the code section. example: http://doi.org/12345.67890#1",
       "repeating_subfields": [
         {
