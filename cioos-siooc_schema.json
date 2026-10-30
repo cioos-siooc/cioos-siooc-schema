@@ -330,7 +330,40 @@
             "en": "Marine turtles, birds, mammals abundance and distribution",
             "fr": "Abondance et distribution de tortues, oiseaux et mammifères marins"
           },
-          "icon": "birds-mammals.svg"
+          "icon": "marine-mammals-birds-turtles.svg",
+          "deprecated": true,
+          "replacedBy": [
+            "seaTurtlesAbundanceAndDistribution",
+            "seabirdsAbundanceAndDistribution",
+            "marineMammalsAbundanceAndDistribution"
+          ]
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "seaTurtlesAbundanceAndDistribution",
+          "label": {
+            "en": "Sea turtles abundance and distribution",
+            "fr": "Abondance et distribution de tortues marines"
+          },
+          "icon": "sea-turtles.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "seabirdsAbundanceAndDistribution",
+          "label": {
+            "en": "Seabirds abundance and distribution",
+            "fr": "Abondance et distribution d'oiseaux marins"
+          },
+          "icon": "seabirds.svg"
+        },
+        {
+          "category": "BioEcosystems",
+          "value": "marineMammalsAbundanceAndDistribution",
+          "label": {
+            "en": "Marine mammals abundance and distribution",
+            "fr": "Abondance et distribution de mammifères marins"
+          },
+          "icon": "marine-mammals.svg"
         },
         {
           "category": "BioEcosystems",
