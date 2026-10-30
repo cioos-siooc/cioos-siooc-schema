@@ -2314,8 +2314,15 @@
     },
     {
       "field_name": "included_in_data_catalogue",
-      "label": "Included in Data Catalogue",
-      "help_text": "Catalogues containing this dataset",
+      "label": {
+        "fr": "Inclus dans le catalogue de données",
+        "en": "Included in Data Catalogue"
+      },
+      "help_text": {
+        "fr": "Catalogues contenant ce jeu de données",
+        "en": "Catalogues containing this dataset"
+      },
+      "display_snippet": "data_catalogue.html",
       "form_blanks": 1,
       "repeating_subfields": [
         {
