@@ -12,3 +12,11 @@ This schema depends on the following ckan extensions. They must be isntalled, co
 * [ckanext-repeating](https://github.com/open-data/ckanext-repeating)
 * [ckanext-composite](https://github.com/EnviDat/ckanext-composite)
 * [ckanext-fluent](https://github.com/ckan/ckanext-fluent)
+
+# Tests
+`tests/test_schema_files.py` checks the schema, license and WKT files
+(`uv run --no-project --with pytest --with shapely pytest tests`).
+`tests/test_schema_ckan.py` loads the schemas through ckanext-scheming and checks
+every validator and snippet they reference resolves; it runs in
+[cioos-ckan-docker-base](https://github.com/cioos-siooc/cioos-ckan-docker-base)
+with `just test-schema` (part of `just test` in CI).
