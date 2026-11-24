@@ -5,6 +5,8 @@ No CKAN needed: ``uv run --with pytest --with shapely pytest tests``.
 """
 
 import json
+import subprocess
+import sys
 from collections import Counter
 from pathlib import Path
 
@@ -157,3 +159,13 @@ def test_wkt_is_valid_polygon(wkt_file):
     assert geom.is_valid, shapely.validation.explain_validity(geom)
     minx, miny, maxx, maxy = geom.bounds
     assert -180 <= minx <= maxx <= 180 and -90 <= miny <= maxy <= 90, "not lon/lat"
+
+
+def test_eov_choices_match_cioos_commons():
+    """The eov choices are generated from cioos-commons/eov.json (synced from cioos-commons)."""
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "update_eovs.py"), "--check"],
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 0, result.stderr
