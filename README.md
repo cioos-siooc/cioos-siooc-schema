@@ -13,6 +13,19 @@ This schema depends on the following ckan extensions. They must be isntalled, co
 * [ckanext-composite](https://github.com/EnviDat/ckanext-composite)
 * [ckanext-fluent](https://github.com/ckan/ckanext-fluent)
 
+# EOV choices
+The `eov` field's choices are generated from the
+[cioos-commons](https://github.com/cioos-siooc/cioos-commons) EOV vocabulary;
+do not edit them in `cioos-siooc_schema.json`. cioos-ckan-docker-base's
+`Sync cioos-commons` workflow copies `eovs/eov.json` to `cioos-commons/eov.json`
+here, runs `scripts/update_eovs.py` to regenerate the choices, and opens the PR
+with a summary of the EOV changes (labelled `breaking change` when an EOV was
+removed). Run the script yourself after a manual change; `--check` reports
+drift, as the tests do.
+Change EOVs, their labels, categories, icons or keyword aliases
+(`alternative_ids`) in cioos-commons; deprecate an EOV rather than delete it, so
+datasets that use it still validate.
+
 # Tests
 `tests/test_schema_files.py` checks the schema, license and WKT files
 (`uv run --no-project --with pytest --with shapely pytest tests`).
